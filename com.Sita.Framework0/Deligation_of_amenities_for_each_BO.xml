@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.sita.testcases.Deligation_of_amenities_for_each_BO"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
