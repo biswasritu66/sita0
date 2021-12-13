@@ -43,37 +43,64 @@ public class CreateUser extends WebdriverUtility{
 			phNumber.sendKeys(phoneNumber);
 		}
 		//clicking and selecting orga.nizational unit
-		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/span[1]/input[1]") WebElement org_Unit;
-		@FindBy(xpath="/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]") WebElement TCI;
+		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/form[1]/div[1]/div[2]/div[2]/div[1]/div[1]/span[1]/input[1]") WebElement org_Unit;
+		@FindBy(xpath="//div[contains(text(),'TCI India')]") WebElement TCI;
 		public void org_Unit()
 		{
 			org_Unit.click();
 			TCI.click();
 		}
 		//clicking location dropdown and selecting agra
-		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/span[1]/input[1]") WebElement Location;
-		@FindBy(xpath="/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]") WebElement Agra;
+		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/form[1]/div[1]/div[2]/div[3]/div[1]/div[1]/span[1]/input[1]") WebElement Location;
+		@FindBy(xpath="//div[contains(text(),'Agra')]") WebElement Agra;
 		///html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[8]/div[1]
 		public void Location()
 		{
 			Location.click();
 			Agra.click();
 		}
-		//scrolling page till add new button
-		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/div[2]/div[3]/div[1]/button[1]/span[1]") WebElement addnewbutton;
-		public void scroll_to_add_new_button()
+		//scrolling page till add Role profile
+		@FindBy(xpath="//span[normalize-space()='Role Profile']") WebElement Role_profile;
+		public void scroll_to_Role_Profile()
 		{
 			 WebdriverUtility wu=new WebdriverUtility();
-			 wu.scrollToWebElement(driver, addnewbutton);
+			 wu.scrollToWebElement(driver, Role_profile);
 			
 		}
 		//clicking "add new" button 
-		@FindBy(xpath="//button[@ant-click-animating-without-extra-node='false']//span[@class='edit-create'][normalize-space()='Add New']") WebElement click_addnewbutton;
+		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/form[1]/div[2]/div[3]/div[1]/button[1]/span[1]") WebElement click_addnewbutton;
 		public void click_add_new_button()
 		{
 			click_addnewbutton.click();
 			
 		}
+		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/form[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/div[1]/span[1]/input[1]") WebElement Department;
+		@FindBy(xpath="//div[contains(text(),'Placement')]") WebElement placement;
+		public void click_and_select_department()
+		{
+			Department.click();
+			placement.click();
+			
+		}
+		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/form[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/span[1]/input[1]") WebElement Roles;
+		public void click_select_roles()
+		{
+			Roles.click();
+			
+		}
+		@FindBy(xpath="//div[contains(text(),'SUPERVISOR')]") WebElement supervisor;
+		public void select_supervisor()
+		{
+			supervisor.click();
+			
+		}
+		@FindBy(xpath="//div[contains(text(),'FHE')]") WebElement FHE;
+		public void select_FHE()
+		{
+			FHE.click();
+			
+		}
+		
 		//scrolling page till FIT,GIT,Series and selecting
 		@FindBy(xpath="//input[@value='FIT']") WebElement FIT;
 		@FindBy(xpath="//input[@value='GIT']") WebElement GIT;
@@ -85,6 +112,24 @@ public class CreateUser extends WebdriverUtility{
 			 FIT.click();
 			 GIT.click();
 			 SERIES.click();
+		}
+		public void scroll_and_select_FIT()
+		{
+			WebdriverUtility wu=new WebdriverUtility();
+			 wu.scrollToWebElement(driver, FIT);
+			FIT.click();
+		}
+		@FindBy(xpath="//button[@type='submit']") WebElement Create_user;
+		public void click_Create_user()
+		{
+			Create_user.click();
+			
+		}
+		@FindBy(xpath="//div[normalize-space()='Admin Console']") WebElement Admin_Console;
+		public void scroll_to_Admin_Console()
+		{
+			Admin_Console.click();
+			
 		}
 		////clicking on active From calender & selecting todays date
 		@FindBy(xpath="//input[@placeholder='Active From']") WebElement Active_form;

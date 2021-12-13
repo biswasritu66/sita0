@@ -27,58 +27,38 @@ public class Create_supervisor_fhe extends BaseClass {
 	}
 	
 	@Test(priority = 2)
-	public void click_on_AddUsers() 
+	public void click_on_AddUsers() throws InterruptedException 
 
 	{
 		CreateUser Cu= new CreateUser(driver);
 		Cu.click_on_AddUsers();
 		logger.pass("AddUsers_clicked");
 		//filling all the supervisor details from the excel sheet
-		
-	}
-	
-	
-	 
-	@Test(priority =3 )
-	public void Supervisor_Basic_Details() 
-
-	{
-		CreateUser Cu= new CreateUser(driver);
 		Cu.User_Basic_Details(excel.getStringData("Inventory_data",1,1), excel.getStringData("Inventory_data",1,2),
-			excel.getStringData("Inventory_data",1,3), excel.getStringData("Inventory_data",1,4));
-		Cu.org_Unit();
-		Cu.Location();
+				excel.getStringData("Inventory_data",1,3), excel.getStringData("Inventory_data",1,4));
+			Cu.org_Unit();
+			Cu.Location();
+		//scroll_and_click_on_add_new_button_select_dept_and_roles
+			Cu.scroll_to_Role_Profile();
+			Cu.click_add_new_button();
+				
+			Cu.click_and_select_department();
+			Cu.click_select_roles();
+			Cu.select_supervisor();
+			//click_on_FIT_GIT_SERIES
+			Cu.scroll_and_select_FIT_GIT_SERIES();
+			Cu.click_Create_user();
+			
 	}
 	
-/*	@Test(priority = 4)
-	public void scroll_and_click_on_add_new_button_select_dept_and_roles() 
-
-	{
-		CreateUser Cu= new CreateUser(driver);
-		Cu.scroll_to_Role_Profile();
-		Cu.click_add_new_button();
-		Cu.click_and_select_department();
-		Cu.click_select_roles();
-		Cu.select_supervisor();
-		
-	}
-	
-	@Test(priority = 5)
-	public void click_on_FIT_GIT_SERIES() throws InterruptedException
-
-	{
-		CreateUser Cu= new CreateUser(driver);
-		Cu.scroll_and_select_FIT_GIT_SERIES();
-		//Cu.click_calender1();//clicking on active From calender & selecting todays date
-		//Cu.click_calender2();////clicking on active till calender
-		Cu.click_Create_user();
-		
-	}
-	@Test(priority = 6)
+	@Test(priority = 3)
 	public void create_fhes() throws InterruptedException
 
 	{
+		
 		CreateUser Cu= new CreateUser(driver);
+		for(int i=0;i<=5;i++) 
+		{
 		Cu.scroll_to_Admin_Console();
 		Cu.click_on_AddUsers();
 		Cu.User_Basic_Details(excel.getStringData("Inventory_data",2,1), excel.getStringData("Inventory_data",2,2),
@@ -92,9 +72,9 @@ public class Create_supervisor_fhe extends BaseClass {
 		Cu.select_FHE();
 		Cu.scroll_and_select_FIT();
 		Cu.click_Create_user();
-		Thread.sleep(5000);
 		
-		*/
+		}
+	}
 		
 		
 		
