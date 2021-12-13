@@ -7,10 +7,9 @@
         <methods>
           <include name="click_on_AddUsers"/>
           <include name="ExtentReportsetUp"/>
-          <include name="loginApp"/>
-          <include name="Supervisor_Basic_Details"/>
           <include name="openingbrowser"/>
           <include name="Screenshot"/>
+          <include name="create_fhes"/>
         </methods>
       </class> <!-- com.sita.testcases.Create_supervisor_fhe -->
     </classes>
