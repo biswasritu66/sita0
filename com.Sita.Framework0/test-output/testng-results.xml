@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Setting up reports and Test is getting Ready]]>
@@ -31,13 +31,19 @@
     <line>
       <![CDATA[Test Completed >>> Reports Generated]]>
     </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed >>> Reports Generated]]>
+    </line>
   </reporter-output>
-  <suite started-at="2021-12-14T06:12:35Z" name="Default suite" finished-at="2021-12-14T06:13:28Z" duration-ms="52831">
+  <suite started-at="2021-12-14T07:40:02Z" name="Default suite" finished-at="2021-12-14T07:40:53Z" duration-ms="50454">
     <groups>
     </groups>
-    <test started-at="2021-12-14T06:12:35Z" name="Default test" finished-at="2021-12-14T06:13:28Z" duration-ms="52831">
-      <class name="com.sita.testcases.Assign_fhe_to_A0_B0">
-        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:42:34Z" name="ExtentReportsetUp" finished-at="2021-12-14T11:42:35Z" duration-ms="1521" status="PASS">
+    <test started-at="2021-12-14T07:40:02Z" name="Default test" finished-at="2021-12-14T07:40:53Z" duration-ms="50454">
+      <class name="com.sita.testcases.Deligation_of_amenities_for_each_BO">
+        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3]" started-at="2021-12-14T13:10:01Z" name="ExtentReportsetUp" finished-at="2021-12-14T13:10:02Z" duration-ms="1523" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and Test is getting Ready]]>
@@ -47,7 +53,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ExtentReportsetUp -->
-        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:42:35Z" name="openingbrowser" finished-at="2021-12-14T11:42:50Z" duration-ms="14446" status="PASS">
+        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3]" started-at="2021-12-14T13:10:02Z" name="openingbrowser" finished-at="2021-12-14T13:10:14Z" duration-ms="11640" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trying to start Browser and Getting application ready]]>
@@ -57,15 +63,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- openingbrowser -->
-        <test-method signature="loginApp()[pri:1, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:42:50Z" name="loginApp" finished-at="2021-12-14T11:42:51Z" duration-ms="1103" status="PASS">
+        <test-method signature="loginApp()[pri:1, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3]" started-at="2021-12-14T13:10:14Z" name="loginApp" finished-at="2021-12-14T13:10:15Z" duration-ms="1046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:42:51Z" name="Screenshot" finished-at="2021-12-14T11:42:52Z" duration-ms="1010" status="PASS">
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3]" started-at="2021-12-14T13:10:15Z" name="Screenshot" finished-at="2021-12-14T13:10:16Z" duration-ms="795" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginApp status=SUCCESS method=Assign_fhe_to_A0_B0.loginApp()[pri:1, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3] output={null}]]]>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=Deligation_of_amenities_for_each_BO.loginApp()[pri:1, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3] output={null}]]]>
               </value>
             </param>
           </params>
@@ -78,15 +84,85 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method signature="navigate_to_homepage_click_on_ArrowButton()[pri:2, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:42:52Z" name="navigate_to_homepage_click_on_ArrowButton" finished-at="2021-12-14T11:43:13Z" duration-ms="20755" status="PASS">
+        <test-method signature="login_as_Z_Mumbai_accepting_all_requested_amenities()[pri:4, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3]" started-at="2021-12-14T13:10:16Z" name="login_as_Z_Mumbai_accepting_all_requested_amenities" finished-at="2021-12-14T13:10:27Z" duration-ms="10994" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']"}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b3cd56fe74c3f3c59e8c58a12e02d2e
+*** Element info: {Using=xpath, value=//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']"}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b3cd56fe74c3f3c59e8c58a12e02d2e
+*** Element info: {Using=xpath, value=//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at com.sita.pageObjects.HomePage.Arrow_Button_BO(HomePage.java:146)
+	at com.sita.testcases.Deligation_of_amenities_for_each_BO.login_as_Z_Mumbai_accepting_all_requested_amenities(Deligation_of_amenities_for_each_BO.java:101)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigate_to_homepage_click_on_ArrowButton -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:43:13Z" name="Screenshot" finished-at="2021-12-14T11:43:13Z" duration-ms="309" status="PASS">
+        </test-method> <!-- login_as_Z_Mumbai_accepting_all_requested_amenities -->
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3]" started-at="2021-12-14T13:10:27Z" name="Screenshot" finished-at="2021-12-14T13:10:28Z" duration-ms="1375" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=navigate_to_homepage_click_on_ArrowButton status=SUCCESS method=Assign_fhe_to_A0_B0.navigate_to_homepage_click_on_ArrowButton()[pri:2, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3] output={null}]]]>
+                <![CDATA[[TestResult name=login_as_Z_Mumbai_accepting_all_requested_amenities status=FAILURE method=Deligation_of_amenities_for_each_BO.login_as_Z_Mumbai_accepting_all_requested_amenities()[pri:4, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3] output={null}]]]>
               </value>
             </param>
           </params>
@@ -99,15 +175,85 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method signature="loginFHE()[pri:6, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:43:13Z" name="loginFHE" finished-at="2021-12-14T11:43:27Z" duration-ms="14120" status="PASS">
+        <test-method signature="login_as_Z_bhubneswar_accepting_all_requested_amenities()[pri:5, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3]" started-at="2021-12-14T13:10:28Z" name="login_as_Z_bhubneswar_accepting_all_requested_amenities" finished-at="2021-12-14T13:10:39Z" duration-ms="10982" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']"}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b3cd56fe74c3f3c59e8c58a12e02d2e
+*** Element info: {Using=xpath, value=//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']"}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b3cd56fe74c3f3c59e8c58a12e02d2e
+*** Element info: {Using=xpath, value=//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at com.sita.pageObjects.HomePage.Arrow_Button_BO(HomePage.java:146)
+	at com.sita.testcases.Deligation_of_amenities_for_each_BO.login_as_Z_bhubneswar_accepting_all_requested_amenities(Deligation_of_amenities_for_each_BO.java:122)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFHE -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:43:27Z" name="Screenshot" finished-at="2021-12-14T11:43:28Z" duration-ms="342" status="PASS">
+        </test-method> <!-- login_as_Z_bhubneswar_accepting_all_requested_amenities -->
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3]" started-at="2021-12-14T13:10:39Z" name="Screenshot" finished-at="2021-12-14T13:10:40Z" duration-ms="1046" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginFHE status=SUCCESS method=Assign_fhe_to_A0_B0.loginFHE()[pri:6, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3] output={null}]]]>
+                <![CDATA[[TestResult name=login_as_Z_bhubneswar_accepting_all_requested_amenities status=FAILURE method=Deligation_of_amenities_for_each_BO.login_as_Z_bhubneswar_accepting_all_requested_amenities()[pri:5, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3] output={null}]]]>
               </value>
             </param>
           </params>
@@ -120,11 +266,102 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:43:28Z" name="closeBrowser" finished-at="2021-12-14T11:43:28Z" duration-ms="701" status="PASS">
+        <test-method signature="login_as_Z_Puri()[pri:6, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3]" started-at="2021-12-14T13:10:40Z" name="login_as_Z_Puri" finished-at="2021-12-14T13:10:51Z" duration-ms="10735" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']"}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b3cd56fe74c3f3c59e8c58a12e02d2e
+*** Element info: {Using=xpath, value=//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']"}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7847}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b3cd56fe74c3f3c59e8c58a12e02d2e
+*** Element info: {Using=xpath, value=//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at com.sita.pageObjects.HomePage.Arrow_Button_BO(HomePage.java:146)
+	at com.sita.testcases.Deligation_of_amenities_for_each_BO.login_as_Z_Puri(Deligation_of_amenities_for_each_BO.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_as_Z_Puri -->
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3]" started-at="2021-12-14T13:10:51Z" name="Screenshot" finished-at="2021-12-14T13:10:52Z" duration-ms="1002" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login_as_Z_Puri status=FAILURE method=Deligation_of_amenities_for_each_BO.login_as_Z_Puri()[pri:6, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed >>> Reports Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Screenshot -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.Deligation_of_amenities_for_each_BO@341814d3]" started-at="2021-12-14T13:10:52Z" name="closeBrowser" finished-at="2021-12-14T13:10:53Z" duration-ms="765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.sita.testcases.Assign_fhe_to_A0_B0 -->
+      </class> <!-- com.sita.testcases.Deligation_of_amenities_for_each_BO -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

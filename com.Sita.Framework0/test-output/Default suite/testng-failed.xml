@@ -3,16 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.sita.testcases.Assign_fhe_to_A0_B0">
+      <class name="com.sita.testcases.Deligation_of_amenities_for_each_BO">
         <methods>
+          <include name="login_as_Z_Puri"/>
           <include name="ExtentReportsetUp"/>
           <include name="openingbrowser"/>
           <include name="Screenshot"/>
+          <include name="login_as_Z_Mumbai_accepting_all_requested_amenities"/>
           <include name="closeBrowser"/>
-          <include name="navigate_to_homepage_click_on_ArrowButton"/>
-          <include name="loginFHE"/>
+          <include name="login_as_Z_bhubneswar_accepting_all_requested_amenities"/>
         </methods>
-      </class> <!-- com.sita.testcases.Assign_fhe_to_A0_B0 -->
+      </class> <!-- com.sita.testcases.Deligation_of_amenities_for_each_BO -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
