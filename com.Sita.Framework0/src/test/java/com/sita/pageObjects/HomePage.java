@@ -1,9 +1,11 @@
-package com.sita.pages;
+package com.sita.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.sita.pages.WebdriverUtility;
 
 
 /**
@@ -17,17 +19,13 @@ public class HomePage extends WebdriverUtility{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	//WebDriver driver;
-	//public HomePage(WebDriver driver) {
-	//	PageFactory.initElements(driver,this);//for initializing webdriver we are creating this constructor.
-	//}
 	
 	
-	@FindBy(xpath="//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']") WebElement ArrowButton;
+	@FindBy(xpath="//tbody/tr[1]/td[5]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']") WebElement ArrowButton_supervisor;
 	@FindBy(xpath="//tbody/tr[1]/td[6]/div[1]/div[2]/span[1]/a[1]//*[name()='svg']") WebElement ArrowButtonFHE;
-	public void Click_ArrowButton()
+	public void Click_ArrowButton_of_supervisor()
 	{
-		ArrowButton.click();
+		ArrowButton_supervisor.click();
 		
 	}
 	public void Click_ArrowButtonFHE()
@@ -57,7 +55,7 @@ public class HomePage extends WebdriverUtility{
 	{
 		AssignButton.click();
 	}
-	@FindBy(xpath="//span[normalize-space()='Send']")WebElement sendButton;
+	@FindBy(xpath="/html/body/div[2]/div/div[2]/div/div[2]/div[3]/button/span")WebElement sendButton;
 	public void sendButton()
 	{
 		

@@ -8,12 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import java.util.List;
 
+import com.sita.pageObjects.HomePage;
 import com.sita.pageObjects.Select_amenities;
 import com.sita.pages.BaseClass;
-import com.sita.pages.HomePage;
 import com.sita.pages.LoginPage;
 import com.sita.pages.WebdriverUtility;
-import com.sita.pages.HomePage;
 public class deligation_of_amenities_to_Z_Mumbai extends BaseClass {
 	
 	public HomePage Hp = new HomePage(driver);
@@ -44,7 +43,7 @@ public class deligation_of_amenities_to_Z_Mumbai extends BaseClass {
 		HomePage Hp = new HomePage(driver);
 		//WebdriverUtility wb = new WebdriverUtility();
 		//wb.waitUntilPageLoad(driver);
-		Hp.Click_ArrowButton();
+		Hp.Click_ArrowButton_of_supervisor();
 		logger.pass("ArrowButton_clicked");
 	
 	}

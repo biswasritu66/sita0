@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.sita.testcases.Create_supervisor_fhe">
+      <class name="com.sita.testcases.Assign_fhe_to_A0_B0">
         <methods>
-          <include name="click_on_AddUsers"/>
           <include name="ExtentReportsetUp"/>
           <include name="openingbrowser"/>
           <include name="Screenshot"/>
-          <include name="create_fhes"/>
+          <include name="closeBrowser"/>
+          <include name="navigate_to_homepage_click_on_ArrowButton"/>
+          <include name="loginFHE"/>
         </methods>
-      </class> <!-- com.sita.testcases.Create_supervisor_fhe -->
+      </class> <!-- com.sita.testcases.Assign_fhe_to_A0_B0 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -32,12 +32,12 @@
       <![CDATA[Test Completed >>> Reports Generated]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-12-13T15:07:08Z" name="Default suite" finished-at="2021-12-13T15:08:40Z" duration-ms="91656">
+  <suite started-at="2021-12-14T06:12:35Z" name="Default suite" finished-at="2021-12-14T06:13:28Z" duration-ms="52831">
     <groups>
     </groups>
-    <test started-at="2021-12-13T15:07:08Z" name="Default test" finished-at="2021-12-13T15:08:40Z" duration-ms="91656">
-      <class name="com.sita.testcases.Create_supervisor_fhe">
-        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.Create_supervisor_fhe@3d246ea3]" started-at="2021-12-13T20:37:07Z" name="ExtentReportsetUp" finished-at="2021-12-13T20:37:08Z" duration-ms="1494" status="PASS">
+    <test started-at="2021-12-14T06:12:35Z" name="Default test" finished-at="2021-12-14T06:13:28Z" duration-ms="52831">
+      <class name="com.sita.testcases.Assign_fhe_to_A0_B0">
+        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:42:34Z" name="ExtentReportsetUp" finished-at="2021-12-14T11:42:35Z" duration-ms="1521" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and Test is getting Ready]]>
@@ -47,7 +47,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ExtentReportsetUp -->
-        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.Create_supervisor_fhe@3d246ea3]" started-at="2021-12-13T20:37:08Z" name="openingbrowser" finished-at="2021-12-13T20:37:21Z" duration-ms="13133" status="PASS">
+        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:42:35Z" name="openingbrowser" finished-at="2021-12-14T11:42:50Z" duration-ms="14446" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trying to start Browser and Getting application ready]]>
@@ -57,15 +57,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- openingbrowser -->
-        <test-method signature="loginApp()[pri:1, instance:com.sita.testcases.Create_supervisor_fhe@3d246ea3]" started-at="2021-12-13T20:37:21Z" name="loginApp" finished-at="2021-12-13T20:37:23Z" duration-ms="1540" status="PASS">
+        <test-method signature="loginApp()[pri:1, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:42:50Z" name="loginApp" finished-at="2021-12-14T11:42:51Z" duration-ms="1103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Create_supervisor_fhe@3d246ea3]" started-at="2021-12-13T20:37:23Z" name="Screenshot" finished-at="2021-12-13T20:37:24Z" duration-ms="1004" status="PASS">
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:42:51Z" name="Screenshot" finished-at="2021-12-14T11:42:52Z" duration-ms="1010" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginApp status=SUCCESS method=Create_supervisor_fhe.loginApp()[pri:1, instance:com.sita.testcases.Create_supervisor_fhe@3d246ea3] output={null}]]]>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=Assign_fhe_to_A0_B0.loginApp()[pri:1, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3] output={null}]]]>
               </value>
             </param>
           </params>
@@ -78,15 +78,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method signature="click_on_AddUsers()[pri:2, instance:com.sita.testcases.Create_supervisor_fhe@3d246ea3]" started-at="2021-12-13T20:37:24Z" name="click_on_AddUsers" finished-at="2021-12-13T20:37:37Z" duration-ms="13566" status="PASS">
+        <test-method signature="navigate_to_homepage_click_on_ArrowButton()[pri:2, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:42:52Z" name="navigate_to_homepage_click_on_ArrowButton" finished-at="2021-12-14T11:43:13Z" duration-ms="20755" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- click_on_AddUsers -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Create_supervisor_fhe@3d246ea3]" started-at="2021-12-13T20:37:37Z" name="Screenshot" finished-at="2021-12-13T20:37:37Z" duration-ms="143" status="PASS">
+        </test-method> <!-- navigate_to_homepage_click_on_ArrowButton -->
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:43:13Z" name="Screenshot" finished-at="2021-12-14T11:43:13Z" duration-ms="309" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=click_on_AddUsers status=SUCCESS method=Create_supervisor_fhe.click_on_AddUsers()[pri:2, instance:com.sita.testcases.Create_supervisor_fhe@3d246ea3] output={null}]]]>
+                <![CDATA[[TestResult name=navigate_to_homepage_click_on_ArrowButton status=SUCCESS method=Assign_fhe_to_A0_B0.navigate_to_homepage_click_on_ArrowButton()[pri:2, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3] output={null}]]]>
               </value>
             </param>
           </params>
@@ -99,15 +99,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method signature="create_fhes()[pri:3, instance:com.sita.testcases.Create_supervisor_fhe@3d246ea3]" started-at="2021-12-13T20:37:37Z" name="create_fhes" finished-at="2021-12-13T20:38:39Z" duration-ms="61509" status="PASS">
+        <test-method signature="loginFHE()[pri:6, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:43:13Z" name="loginFHE" finished-at="2021-12-14T11:43:27Z" duration-ms="14120" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- create_fhes -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Create_supervisor_fhe@3d246ea3]" started-at="2021-12-13T20:38:39Z" name="Screenshot" finished-at="2021-12-13T20:38:39Z" duration-ms="157" status="PASS">
+        </test-method> <!-- loginFHE -->
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:43:27Z" name="Screenshot" finished-at="2021-12-14T11:43:28Z" duration-ms="342" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=create_fhes status=SUCCESS method=Create_supervisor_fhe.create_fhes()[pri:3, instance:com.sita.testcases.Create_supervisor_fhe@3d246ea3] output={null}]]]>
+                <![CDATA[[TestResult name=loginFHE status=SUCCESS method=Assign_fhe_to_A0_B0.loginFHE()[pri:6, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3] output={null}]]]>
               </value>
             </param>
           </params>
@@ -120,11 +120,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.Create_supervisor_fhe@3d246ea3]" started-at="2021-12-13T20:38:39Z" name="closeBrowser" finished-at="2021-12-13T20:38:40Z" duration-ms="549" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.Assign_fhe_to_A0_B0@3d246ea3]" started-at="2021-12-14T11:43:28Z" name="closeBrowser" finished-at="2021-12-14T11:43:28Z" duration-ms="701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.sita.testcases.Create_supervisor_fhe -->
+      </class> <!-- com.sita.testcases.Assign_fhe_to_A0_B0 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
