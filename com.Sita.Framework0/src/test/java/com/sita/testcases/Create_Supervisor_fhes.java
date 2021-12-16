@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -22,7 +23,7 @@ public class Create_Supervisor_fhes {
 	
 	@BeforeTest
 	public void setupTest() throws InterruptedException {
-		CreateUser Cu= new CreateUser(driver);
+		//CreateUser Cu= new CreateUser(driver);
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get("http://sita-usermgmt-dev-demo.s3-website.ap-south-1.amazonaws.com/user");
@@ -31,29 +32,34 @@ public class Create_Supervisor_fhes {
 		driver.findElement(By.id("username")).sendKeys("admin@testsita.com");
 		driver.findElement(By.id("password")).sendKeys("Test@123");
 		driver.findElement(By.xpath("//span[normalize-space()='Login']")).click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-primary']")).click();
 		//Cu.click_on_AddUsers();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 	}
 	
 
 	@Test(dataProvider="Inventory_data",priority=1)
-	public void customer_details( String Name, String EmployeeCode, String EmailId, String PhoneNumber) {
-		System.out.println(Name+" "+EmployeeCode+" "+EmailId+" "+PhoneNumber+"");
+	
+	public void customer_details( String Name, String EmployeeCode, String EmailId, String PhoneNumber) throws InterruptedException {
+		//System.out.println(Name+" "+EmployeeCode+" "+EmailId+" "+PhoneNumber+"");
 		
 		driver.findElement(By.id("fullName")).sendKeys(Name);
 		driver.findElement(By.id("employeeId")).sendKeys(EmployeeCode);
 		driver.findElement(By.id("email")).sendKeys(EmailId);
 		driver.findElement(By.id("phoneNumber")).sendKeys(PhoneNumber);
-		driver.findElement(By.xpath("/html[1]/body[1]/div[1]/section[1]/div[1]/form[1]/div[1]/div[2]/div[2]/div[1]/div[1]/span[1]/input[1]")).click();
-		driver.findElement(By.xpath("//div[contains(text(),'TCI India')]")).click();
-		//location
-		 WebdriverUtility wu=new WebdriverUtility();
-		 WebElement Rollprofile = driver.findElement(By.xpath("/span[normalize-space()='Role Profile']"));
-		 wu.scrollToWebElement(driver, Rollprofile);
-		 
-		 
+		
+		CreateUser Cu= new CreateUser(driver);
+		Cu.org_Unit();
+		Cu.Location();
+		Cu.scroll_to_addnewbutton_click();
+		Cu.click_and_select_department();
+		Cu.click_select_roles();
+		Cu.select_FHE();
+		Cu.scroll_and_select_FIT();
+		Cu.click_Create_user();
+		Thread.sleep(2000);
+		Cu.click_on_AddUsers();
 
 	}
 	
@@ -83,6 +89,11 @@ public class Create_Supervisor_fhes {
 			System.out.println();
 		}
 		return data;
+	}
+	@AfterClass
+	void Closing_browser()
+	{
+		driver.close();
 	}
 }
 

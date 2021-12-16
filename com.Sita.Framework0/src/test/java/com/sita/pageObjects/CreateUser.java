@@ -63,11 +63,12 @@ public class CreateUser extends WebdriverUtility{
 			Agra.click();
 		}
 		//scrolling page till add Role profile
-		@FindBy(xpath="//span[normalize-space()='Role Profile']") WebElement Role_profile;
-		public void scroll_to_Role_Profile()
+		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/form[1]/div[2]/div[3]/div[1]/button[1]/span[1]") WebElement Role_profile;
+		public void scroll_to_addnewbutton_click()
 		{
 			 WebdriverUtility wu=new WebdriverUtility();
 			 wu.scrollToWebElement(driver, Role_profile);
+			 Role_profile.click();
 			
 		}
 		//clicking "add new" button 

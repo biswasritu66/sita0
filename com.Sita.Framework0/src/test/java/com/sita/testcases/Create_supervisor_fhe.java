@@ -39,8 +39,8 @@ public class Create_supervisor_fhe extends BaseClass {
 			Cu.org_Unit();
 			Cu.Location();
 		//scroll_and_click_on_add_new_button_select_dept_and_roles
-			Cu.scroll_to_Role_Profile();
-			Cu.click_add_new_button();
+			Cu.scroll_to_addnewbutton_click();
+			//Cu.click_add_new_button();
 				
 			Cu.click_and_select_department();
 			Cu.click_select_roles();
@@ -68,8 +68,8 @@ public class Create_supervisor_fhe extends BaseClass {
 				excel.getStringData("Inventory_data",2,2), excel.getStringData("Inventory_data",2,3));
 		Cu.org_Unit();
 		Cu.Location();
-		Cu.scroll_to_Role_Profile();
-		Cu.click_add_new_button();
+		Cu.scroll_to_addnewbutton_click();
+		//Cu.click_add_new_button();
 		Cu.click_and_select_department();
 		Cu.click_select_roles();
 		Cu.select_FHE();
