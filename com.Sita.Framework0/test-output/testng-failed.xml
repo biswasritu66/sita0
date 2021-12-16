@@ -3,17 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.sita.testcases.Deligation_of_amenities_for_each_BO">
+      <class name="com.sita.testcases.Create_Supervisor_fhes">
         <methods>
-          <include name="login_as_Z_Puri"/>
-          <include name="ExtentReportsetUp"/>
-          <include name="openingbrowser"/>
-          <include name="Screenshot"/>
-          <include name="login_as_Z_Mumbai_accepting_all_requested_amenities"/>
-          <include name="closeBrowser"/>
-          <include name="login_as_Z_bhubneswar_accepting_all_requested_amenities"/>
+          <include name="setupTest"/>
+          <include name="customer_details" invocation-numbers="0 1 2 3 4"/>
         </methods>
-      </class> <!-- com.sita.testcases.Deligation_of_amenities_for_each_BO -->
+      </class> <!-- com.sita.testcases.Create_Supervisor_fhes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

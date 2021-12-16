@@ -2,6 +2,8 @@ package com.sita.utility;
 
 import java.io.File;
 import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 /**
  * This class contains methods for reading the data in excel sheet
@@ -10,7 +12,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  */
 public class ExcelDataProvider {
 
-	XSSFWorkbook wb;
+	static XSSFWorkbook wb;
+	//static XSSFSheet sheet;
 	public ExcelDataProvider()
 	{
 		
@@ -43,8 +46,30 @@ public class ExcelDataProvider {
 	{
 		return wb.getSheet(sheetName).getRow(row).getCell(column).getNumericCellValue();
 	}
+
 	
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

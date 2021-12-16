@@ -1,9 +1,12 @@
 package com.sita.pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.DataProvider;
+
 import com.sita.pages.WebdriverUtility;
 
 /**
@@ -17,9 +20,9 @@ public class CreateUser extends WebdriverUtility{
 			this.driver=driver;
 			PageFactory.initElements(driver, this);
 		}
-		//clicking add user button
-		@FindBy(xpath="//span[normalize-space()='Add Users']") WebElement AddUsers;
 		
+		//clicking add user button
+		@FindBy(xpath="//button[@class='ant-btn ant-btn-primary']") WebElement AddUsers;
 		public void click_on_AddUsers()
 		{
 			
@@ -146,7 +149,13 @@ public class CreateUser extends WebdriverUtility{
 			Active_till.click();
 			
 		}
-}
+		
+			
+			
+		}
+
+
+
 
 
 
