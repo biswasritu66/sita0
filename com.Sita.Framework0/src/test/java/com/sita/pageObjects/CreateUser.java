@@ -1,6 +1,7 @@
 package com.sita.pageObjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -64,20 +65,43 @@ public class CreateUser extends WebdriverUtility{
 		}
 		//scrolling page till add Role profile
 		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/form[1]/div[2]/div[3]/div[1]/button[1]/span[1]") WebElement Role_profile;
-		public void scroll_to_addnewbutton_click()
-		{
+		public void scroll_to_rollprofile_addnewbutton_click()
+		{	
 			 WebdriverUtility wu=new WebdriverUtility();
 			 wu.scrollToWebElement(driver, Role_profile);
 			 Role_profile.click();
 			
 		}
-		//clicking "add new" button 
-		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/form[1]/div[2]/div[3]/div[1]/button[1]/span[1]") WebElement click_addnewbutton;
-		public void click_add_new_button()
+		
+		
+		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/form[1]/div[2]/div[7]/div[1]/button[1]/span[1]") WebElement addnew_button;
+		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/form[1]/div[2]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/div[1]/span[1]/input[1]") WebElement sourcemarket;
+		@FindBy(xpath="//div[contains(text(),'France')]") WebElement France;
+		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/form[1]/div[2]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[1]") WebElement Customers;
+	//	@FindBy(xpath="//span[@title='Voyageurs Du Monde']") WebElement Voyageurs_Du_Monde1;
+		public void adding_customer_segments()
 		{
-			click_addnewbutton.click();
-			
+			 WebdriverUtility wu=new WebdriverUtility();
+			 wu.scrollToWebElement(driver, addnew_button);
+			 addnew_button.click();
+			 sourcemarket.click();
+			 France.click();
+			 Customers.click();
+			// Customers.sendKeys("Voyageurs Du Monde");
+			// Voyageurs_Du_Monde1.click();
+			 
 		}
+		
+		@FindBy(xpath="//span[@title='Voyageurs Du Monde']") WebElement Voyageurs_Du_Monde;
+		@FindBy(xpath="//span[@title='Seemore Voyages']") WebElement Seemore_Voyages;
+		public void select_customer() throws InterruptedException
+		{
+			JavascriptExecutor js=(JavascriptExecutor) driver;
+			js.executeScript("document.querySelector('.ant-select-tree-list-holder').scrollTop=1000");
+			//Voyageurs_Du_Monde.click();
+			Seemore_Voyages.click();
+		}
+		
 		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/div[1]/form[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/div[1]/span[1]/input[1]") WebElement Department;
 		@FindBy(xpath="//div[contains(text(),'Placement')]") WebElement placement;
 		public void click_and_select_department()
@@ -117,39 +141,25 @@ public class CreateUser extends WebdriverUtility{
 			 GIT.click();
 			 SERIES.click();
 		}
-		public void scroll_and_select_FIT()
+		public void select_FIT()
 		{
-			WebdriverUtility wu=new WebdriverUtility();
-			 wu.scrollToWebElement(driver, FIT);
+		//	WebdriverUtility wu=new WebdriverUtility();
+			// wu.scrollToWebElement(driver, FIT);
 			FIT.click();
 		}
-		@FindBy(xpath="//button[@type='submit']") WebElement Create_user;
+		@FindBy(xpath="//span[normalize-space()='Create User']") WebElement Create_user;
 		public void click_Create_user()
 		{
 			Create_user.click();
 			
 		}
-		@FindBy(xpath="//div[normalize-space()='Admin Console']") WebElement Admin_Console;
-		public void scroll_to_Admin_Console()
+		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/header[1]/ul[1]/li[4]/span[1]/span[1]/*[name()='svg'][1]") WebElement logout;
+		public void Click_logout()
 		{
-			Admin_Console.click();
+			logout.click();
 			
 		}
-		////clicking on active From calender & selecting todays date
-		@FindBy(xpath="//input[@placeholder='Active From']") WebElement Active_form;
-		@FindBy(xpath="//a[@class='ant-picker-today-btn']") WebElement click_today;
-		public void click_calender1()
-		{
-			Active_form.click();
-			click_today.click();
-		}
-		//clicking on active till calender
-		@FindBy(xpath="//input[@placeholder='Active Till']") WebElement Active_till;
-		public void click_calender2()
-		{
-			Active_till.click();
-			
-		}
+		
 		
 			
 			

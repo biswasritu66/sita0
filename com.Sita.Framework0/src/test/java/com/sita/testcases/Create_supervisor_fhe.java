@@ -39,21 +39,25 @@ public class Create_supervisor_fhe extends BaseClass {
 			Cu.org_Unit();
 			Cu.Location();
 		//scroll_and_click_on_add_new_button_select_dept_and_roles
-			Cu.scroll_to_addnewbutton_click();
+			Cu.scroll_to_rollprofile_addnewbutton_click();
 			//Cu.click_add_new_button();
 				
 			Cu.click_and_select_department();
 			Cu.click_select_roles();
 			Cu.select_supervisor();
+			Cu.adding_customer_segments();
+			Cu.select_customer();
+		//	Cu.scrolling_and_selecting_Voyageurs_Du_Monde();
+			Thread.sleep(5000);
 			//click_on_FIT_GIT_SERIES
 			Cu.scroll_and_select_FIT_GIT_SERIES();
 			
 			Cu.click_Create_user();
-			
+			Thread.sleep(5000);
 			
 	}
 	
-	@Test(priority = 3)
+	/*@Test(priority = 3)
 	public void create_fhes() throws InterruptedException
 
 	{
@@ -63,21 +67,23 @@ public class Create_supervisor_fhe extends BaseClass {
 		{
 		//Cu.scroll_to_Admin_Console();
 		Cu.click_on_AddUsers();
-		//Thread.sleep(5000);
+		
 		Cu.User_Basic_Details(excel.getStringData("Inventory_data",2,0), excel.getStringData("Inventory_data",2,1),
 				excel.getStringData("Inventory_data",2,2), excel.getStringData("Inventory_data",2,3));
 		Cu.org_Unit();
 		Cu.Location();
-		Cu.scroll_to_addnewbutton_click();
+		Cu.scroll_to_rollprofile_addnewbutton_click();
 		//Cu.click_add_new_button();
 		Cu.click_and_select_department();
 		Cu.click_select_roles();
 		Cu.select_FHE();
-		Cu.scroll_and_select_FIT();
-		Cu.click_Create_user();
+		//Thread.sleep(5000);
+		Cu.add_new_button_for_customer_segments();
+		//Cu.scroll_and_select_FIT();
+		//Cu.click_Create_user();
 		
 		}
-	}
+	}*/
 		
 		
 		

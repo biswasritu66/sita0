@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="0" failed="5" skipped="0">
+<testng-results ignored="0" total="6" passed="1" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-16T11:30:56Z" name="Default suite" finished-at="2021-12-16T11:31:31Z" duration-ms="34546">
+  <suite started-at="2021-12-20T11:05:14Z" name="Default suite" finished-at="2021-12-20T11:06:13Z" duration-ms="59157">
     <groups>
     </groups>
-    <test started-at="2021-12-16T11:30:56Z" name="Default test" finished-at="2021-12-16T11:31:31Z" duration-ms="34546">
+    <test started-at="2021-12-20T11:05:14Z" name="Default test" finished-at="2021-12-20T11:06:13Z" duration-ms="59157">
       <class name="com.sita.testcases.Create_Supervisor_fhes">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.sita.testcases.Create_Supervisor_fhes@59cba5a]" started-at="2021-12-16T17:00:56Z" name="setupTest" finished-at="2021-12-16T17:01:13Z" duration-ms="16165" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.sita.testcases.Create_Supervisor_fhes@6f19ac19]" started-at="2021-12-20T16:35:14Z" name="setupTest" finished-at="2021-12-20T16:35:24Z" duration-ms="10437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_Supervisor_fhes@59cba5a]" started-at="2021-12-16T17:01:14Z" name="customer_details" data-provider="Inventory_data" finished-at="2021-12-16T17:01:18Z" duration-ms="3482" status="FAIL">
+        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_Supervisor_fhes@6f19ac19]" started-at="2021-12-20T16:35:25Z" name="customer_details" data-provider="Inventory_data" finished-at="2021-12-20T16:35:34Z" duration-ms="8791" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Vaibhav]]>
+                <![CDATA[rajag]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[EMP007]]>
+                <![CDATA[EMP684]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[vaibhav@xploruat.com]]>
+                <![CDATA[rajag@gmail.com]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[919876543006]]>
+                <![CDATA[919876543990]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/span[normalize-space()='Role Profile']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='ant-btn ant-btn-primary']"}
   (Session info: chrome=96.0.4664.45)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3a786137ca822987916ee0036f47790
-*** Element info: {Using=xpath, value=/span[normalize-space()='Role Profile']}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d7cf10046c352aafea06d9c54624154
+*** Element info: {Using=xpath, value=//button[@class='ant-btn ant-btn-primary']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/span[normalize-space()='Role Profile']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='ant-btn ant-btn-primary']"}
   (Session info: chrome=96.0.4664.45)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3a786137ca822987916ee0036f47790
-*** Element info: {Using=xpath, value=/span[normalize-space()='Role Profile']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d7cf10046c352aafea06d9c54624154
+*** Element info: {Using=xpath, value=//button[@class='ant-btn ant-btn-primary']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -71,7 +71,11 @@ Session ID: f3a786137ca822987916ee0036f47790
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.sita.testcases.Create_Supervisor_fhes.customer_details(Create_Supervisor_fhes.java:52)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.sita.pageObjects.CreateUser.click_on_AddUsers(CreateUser.java:30)
+	at com.sita.testcases.Create_Supervisor_fhes.customer_details(Create_Supervisor_fhes.java:71)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,47 +107,47 @@ Session ID: f3a786137ca822987916ee0036f47790
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customer_details -->
-        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_Supervisor_fhes@59cba5a]" started-at="2021-12-16T17:01:18Z" name="customer_details" data-provider="Inventory_data" finished-at="2021-12-16T17:01:22Z" duration-ms="3726" status="FAIL">
+        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_Supervisor_fhes@6f19ac19]" started-at="2021-12-20T16:35:34Z" name="customer_details" data-provider="Inventory_data" finished-at="2021-12-20T16:35:41Z" duration-ms="6280" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Rahul]]>
+                <![CDATA[rahulg]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[EMP008]]>
+                <![CDATA[EMP683]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[rahul@xploruat.com]]>
+                <![CDATA[rahulg@gmail.com]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[919876543007]]>
+                <![CDATA[919876543991]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_6_list" aria-autocomplete="list" aria-controls="rc_select_6_list" aria-activedescendant="rc_select_6_list_0" readonly="" unselectable="on" value="" id="rc_select_6" style="opacity: 0;" aria-expanded="false"> is not clickable at point (659, 331). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
+              <![CDATA[element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_3_list" aria-autocomplete="list" aria-controls="rc_select_3_list" aria-activedescendant="rc_select_3_list_0" readonly="" unselectable="on" value="" id="rc_select_3" style="opacity: 0;" aria-expanded="false"> is not clickable at point (648, 305). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
   (Session info: chrome=96.0.4664.45)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3a786137ca822987916ee0036f47790]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d7cf10046c352aafea06d9c54624154]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_6_list" aria-autocomplete="list" aria-controls="rc_select_6_list" aria-activedescendant="rc_select_6_list_0" readonly="" unselectable="on" value="" id="rc_select_6" style="opacity: 0;" aria-expanded="false"> is not clickable at point (659, 331). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_3_list" aria-autocomplete="list" aria-controls="rc_select_3_list" aria-activedescendant="rc_select_3_list_0" readonly="" unselectable="on" value="" id="rc_select_3" style="opacity: 0;" aria-expanded="false"> is not clickable at point (648, 305). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
   (Session info: chrome=96.0.4664.45)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3a786137ca822987916ee0036f47790
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d7cf10046c352aafea06d9c54624154
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -157,7 +161,13 @@ Session ID: f3a786137ca822987916ee0036f47790
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.sita.testcases.Create_Supervisor_fhes.customer_details(Create_Supervisor_fhes.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.sita.pageObjects.CreateUser.org_Unit(CreateUser.java:54)
+	at com.sita.testcases.Create_Supervisor_fhes.customer_details(Create_Supervisor_fhes.java:58)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -189,47 +199,47 @@ Session ID: f3a786137ca822987916ee0036f47790
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customer_details -->
-        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_Supervisor_fhes@59cba5a]" started-at="2021-12-16T17:01:22Z" name="customer_details" data-provider="Inventory_data" finished-at="2021-12-16T17:01:25Z" duration-ms="3337" status="FAIL">
+        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_Supervisor_fhes@6f19ac19]" started-at="2021-12-20T16:35:41Z" name="customer_details" data-provider="Inventory_data" finished-at="2021-12-20T16:35:46Z" duration-ms="5912" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Karthik]]>
+                <![CDATA[deepakg]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[EMP009]]>
+                <![CDATA[EMP682]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[karthik@xploruat.com]]>
+                <![CDATA[deepakg@gmail.com]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[919876543008]]>
+                <![CDATA[919876543992]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_6_list" aria-autocomplete="list" aria-controls="rc_select_6_list" aria-activedescendant="rc_select_6_list_0" readonly="" unselectable="on" value="" id="rc_select_6" style="opacity: 0;" aria-expanded="false"> is not clickable at point (659, 331). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
+              <![CDATA[element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_3_list" aria-autocomplete="list" aria-controls="rc_select_3_list" aria-activedescendant="rc_select_3_list_0" readonly="" unselectable="on" value="" id="rc_select_3" style="opacity: 0;" aria-expanded="false"> is not clickable at point (648, 305). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
   (Session info: chrome=96.0.4664.45)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3a786137ca822987916ee0036f47790]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d7cf10046c352aafea06d9c54624154]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_6_list" aria-autocomplete="list" aria-controls="rc_select_6_list" aria-activedescendant="rc_select_6_list_0" readonly="" unselectable="on" value="" id="rc_select_6" style="opacity: 0;" aria-expanded="false"> is not clickable at point (659, 331). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_3_list" aria-autocomplete="list" aria-controls="rc_select_3_list" aria-activedescendant="rc_select_3_list_0" readonly="" unselectable="on" value="" id="rc_select_3" style="opacity: 0;" aria-expanded="false"> is not clickable at point (648, 305). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
   (Session info: chrome=96.0.4664.45)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3a786137ca822987916ee0036f47790
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d7cf10046c352aafea06d9c54624154
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -243,7 +253,13 @@ Session ID: f3a786137ca822987916ee0036f47790
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.sita.testcases.Create_Supervisor_fhes.customer_details(Create_Supervisor_fhes.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.sita.pageObjects.CreateUser.org_Unit(CreateUser.java:54)
+	at com.sita.testcases.Create_Supervisor_fhes.customer_details(Create_Supervisor_fhes.java:58)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -275,47 +291,47 @@ Session ID: f3a786137ca822987916ee0036f47790
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customer_details -->
-        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_Supervisor_fhes@59cba5a]" started-at="2021-12-16T17:01:25Z" name="customer_details" data-provider="Inventory_data" finished-at="2021-12-16T17:01:28Z" duration-ms="3173" status="FAIL">
+        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_Supervisor_fhes@6f19ac19]" started-at="2021-12-20T16:35:46Z" name="customer_details" data-provider="Inventory_data" finished-at="2021-12-20T16:35:52Z" duration-ms="5393" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Rajesh]]>
+                <![CDATA[vireshg]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[EMP010]]>
+                <![CDATA[EMP681]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[rajesh@xploruat.com]]>
+                <![CDATA[vireshg@gmail.com]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[919876543009]]>
+                <![CDATA[919876543993]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_6_list" aria-autocomplete="list" aria-controls="rc_select_6_list" aria-activedescendant="rc_select_6_list_0" readonly="" unselectable="on" value="" id="rc_select_6" style="opacity: 0;" aria-expanded="false"> is not clickable at point (659, 331). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
+              <![CDATA[element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_3_list" aria-autocomplete="list" aria-controls="rc_select_3_list" aria-activedescendant="rc_select_3_list_0" readonly="" unselectable="on" value="" id="rc_select_3" style="opacity: 0;" aria-expanded="false"> is not clickable at point (648, 305). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
   (Session info: chrome=96.0.4664.45)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3a786137ca822987916ee0036f47790]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d7cf10046c352aafea06d9c54624154]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_6_list" aria-autocomplete="list" aria-controls="rc_select_6_list" aria-activedescendant="rc_select_6_list_0" readonly="" unselectable="on" value="" id="rc_select_6" style="opacity: 0;" aria-expanded="false"> is not clickable at point (659, 331). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_3_list" aria-autocomplete="list" aria-controls="rc_select_3_list" aria-activedescendant="rc_select_3_list_0" readonly="" unselectable="on" value="" id="rc_select_3" style="opacity: 0;" aria-expanded="false"> is not clickable at point (648, 305). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
   (Session info: chrome=96.0.4664.45)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3a786137ca822987916ee0036f47790
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d7cf10046c352aafea06d9c54624154
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -329,7 +345,13 @@ Session ID: f3a786137ca822987916ee0036f47790
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.sita.testcases.Create_Supervisor_fhes.customer_details(Create_Supervisor_fhes.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.sita.pageObjects.CreateUser.org_Unit(CreateUser.java:54)
+	at com.sita.testcases.Create_Supervisor_fhes.customer_details(Create_Supervisor_fhes.java:58)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -361,47 +383,47 @@ Session ID: f3a786137ca822987916ee0036f47790
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customer_details -->
-        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_Supervisor_fhes@59cba5a]" started-at="2021-12-16T17:01:28Z" name="customer_details" data-provider="Inventory_data" finished-at="2021-12-16T17:01:31Z" duration-ms="2857" status="FAIL">
+        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_Supervisor_fhes@6f19ac19]" started-at="2021-12-20T16:35:52Z" name="customer_details" data-provider="Inventory_data" finished-at="2021-12-20T16:35:57Z" duration-ms="5459" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Raman]]>
+                <![CDATA[annug]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[EMP011]]>
+                <![CDATA[EMP680]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[raman@xploruat.com]]>
+                <![CDATA[annug@gmail.com]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[919876543010]]>
+                <![CDATA[919876543994]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_6_list" aria-autocomplete="list" aria-controls="rc_select_6_list" aria-activedescendant="rc_select_6_list_0" readonly="" unselectable="on" value="" id="rc_select_6" style="opacity: 0;" aria-expanded="false"> is not clickable at point (659, 331). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
+              <![CDATA[element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_3_list" aria-autocomplete="list" aria-controls="rc_select_3_list" aria-activedescendant="rc_select_3_list_0" readonly="" unselectable="on" value="" id="rc_select_3" style="opacity: 0;" aria-expanded="false"> is not clickable at point (648, 305). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
   (Session info: chrome=96.0.4664.45)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3a786137ca822987916ee0036f47790]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d7cf10046c352aafea06d9c54624154]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_6_list" aria-autocomplete="list" aria-controls="rc_select_6_list" aria-activedescendant="rc_select_6_list_0" readonly="" unselectable="on" value="" id="rc_select_6" style="opacity: 0;" aria-expanded="false"> is not clickable at point (659, 331). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_3_list" aria-autocomplete="list" aria-controls="rc_select_3_list" aria-activedescendant="rc_select_3_list_0" readonly="" unselectable="on" value="" id="rc_select_3" style="opacity: 0;" aria-expanded="false"> is not clickable at point (648, 305). Other element would receive the click: <span class="ant-select-selection-item" title="...">TCI India</span>
   (Session info: chrome=96.0.4664.45)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3a786137ca822987916ee0036f47790
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3691}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d7cf10046c352aafea06d9c54624154
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -415,7 +437,13 @@ Session ID: f3a786137ca822987916ee0036f47790
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.sita.testcases.Create_Supervisor_fhes.customer_details(Create_Supervisor_fhes.java:49)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.sita.pageObjects.CreateUser.org_Unit(CreateUser.java:54)
+	at com.sita.testcases.Create_Supervisor_fhes.customer_details(Create_Supervisor_fhes.java:58)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -447,6 +475,14 @@ Session ID: f3a786137ca822987916ee0036f47790
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customer_details -->
+        <test-method signature="Login_Fhe()[pri:2, instance:com.sita.testcases.Create_Supervisor_fhes@6f19ac19]" started-at="2021-12-20T16:35:57Z" name="Login_Fhe" finished-at="2021-12-20T16:36:13Z" duration-ms="15376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_Fhe -->
+        <test-method is-config="true" signature="Closing_browser()[pri:0, instance:com.sita.testcases.Create_Supervisor_fhes@6f19ac19]" started-at="2021-12-20T16:36:13Z" name="Closing_browser" finished-at="2021-12-20T16:36:13Z" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closing_browser -->
       </class> <!-- com.sita.testcases.Create_Supervisor_fhes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
