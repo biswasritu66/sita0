@@ -1,29 +1,19 @@
 package com.sita.testcases;
 
-
 import java.util.concurrent.TimeUnit;
 
-import com.sita.pages.BaseClass;
-import com.sita.pages.LoginPage;
-import com.sita.pages.WebdriverUtility;
-
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.sita.pageObjects.CreateUser;
-import com.sita.utility.ExcelDataProvider;
 import com.sita.utility.ExcelUtils;
 
-public class Create_fhes {
-	
+public class Create_supervisor {
 	WebDriver driver=null;
 	@BeforeTest
 	public void setupTest() throws InterruptedException {
@@ -59,11 +49,11 @@ public class Create_fhes {
 		Cu.scroll_to_rollprofile_addnewbutton_click();
 		Cu.click_and_select_department();
 		Cu.click_select_roles();
-		Cu.select_FHE();
+		Cu.select_supervisor();
 		Cu.adding_customer_segments();
 		Cu.select_customer();
 		//Thread.sleep(5000);
-		Cu.select_FIT();
+		Cu.scroll_and_select_FIT_GIT_SERIES();
 		//Thread.sleep(3000);
 		Cu.click_Create_user();
 		Thread.sleep(2000);
@@ -93,7 +83,7 @@ public class Create_fhes {
 	@DataProvider(name="Inventory_data")
 	public Object[][]  getData() {
 		String excelPath = "C:\\Users\\Ritu\\git\\needle\\com.Sita.Framework0\\TestData\\Data.xlsx";
-		Object data[][] = testData(excelPath, "Create_user_FHE");
+		Object data[][] = testData(excelPath, "Create_user_supervisor");
 		return data;
 	}
 	
@@ -123,19 +113,4 @@ public class Create_fhes {
 		driver.close();
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
