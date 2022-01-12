@@ -3,10 +3,6 @@ package com.sita.testcases;
 
 import java.util.concurrent.TimeUnit;
 
-import com.sita.pages.BaseClass;
-import com.sita.pages.LoginPage;
-import com.sita.pages.WebdriverUtility;
-
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,15 +15,16 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.sita.pageObjects.CreateUser;
+import com.sita.pages.LoginPage;
 import com.sita.utility.ExcelDataProvider;
 import com.sita.utility.ExcelUtils;
 
 public class Create_fhes {
 	
-	WebDriver driver=null;
+	 WebDriver driver=null;
+	 
 	@BeforeTest
 	public void setupTest() throws InterruptedException {
-		//CreateUser Cu= new CreateUser(driver);
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get("https://d1hyptr76mcsyh.cloudfront.net/login");
@@ -42,11 +39,11 @@ public class Create_fhes {
 		Thread.sleep(1000);
 	}
 	
-	@Test(dataProvider="Inventory_data",priority=1)
+	@Test(dataProvider="Create_user_FHE",priority=1)
 	
 	public void customer_details( String Name, String EmployeeCode, String EmailId, String PhoneNumber) throws InterruptedException {
 		//System.out.println(Name+" "+EmployeeCode+" "+EmailId+" "+PhoneNumber+"");
-		
+		//WebDriver driver=new ChromeDriver();
 		//driver.findElement(By.id("fullName")).clear();
 		driver.findElement(By.id("fullName")).sendKeys(Name);
 		driver.findElement(By.id("employeeId")).sendKeys(EmployeeCode);
@@ -68,29 +65,30 @@ public class Create_fhes {
 		Cu.click_Create_user();
 		Thread.sleep(2000);
 		Cu.click_on_AddUsers();
-
+		Thread.sleep(5000);
 	}
-		@Test(priority = 2)
-		public void Login_Fhe() throws InterruptedException 
-		{
-			CreateUser Cu= new CreateUser(driver);
-			Cu.Click_logout();
-			driver.close();
-			//Thread.sleep(5000);
-			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-			driver=new ChromeDriver();
-			driver.get("https://d28eejm9iuuhtp.cloudfront.net/login");
-			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
-			Thread.sleep(1000);
-			driver.findElement(By.id("username")).sendKeys("rajaf@gmail.com");
-			driver.findElement(By.id("password")).sendKeys("Test@123");
-			driver.findElement(By.xpath("//span[normalize-space()='Login']")).click();
-			Thread.sleep(7000);
-			
-		}
+	@Test(priority = 2)
+	public void Login_FHE() throws InterruptedException 
+	{
+		CreateUser Cu= new CreateUser(driver);
+		Cu.Click_logout();
+		Thread.sleep(5000);
+		driver.close();
+		
+		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("https://d28eejm9iuuhtp.cloudfront.net/login");
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		Thread.sleep(1000);
+		driver.findElement(By.id("username")).sendKeys("gagan@gmail.com");
+		driver.findElement(By.id("password")).sendKeys("Test@123");
+		driver.findElement(By.xpath("//span[normalize-space()='Login']")).click();
+		Thread.sleep(5000);
+	}
 	
-	@DataProvider(name="Inventory_data")
+	
+	@DataProvider(name="Create_user_FHE")
 	public Object[][]  getData() {
 		String excelPath = "C:\\Users\\Ritu\\git\\needle\\com.Sita.Framework0\\TestData\\Data.xlsx";
 		Object data[][] = testData(excelPath, "Create_user_FHE");

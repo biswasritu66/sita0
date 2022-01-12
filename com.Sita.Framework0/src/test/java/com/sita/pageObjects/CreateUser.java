@@ -153,15 +153,30 @@ public class CreateUser extends WebdriverUtility{
 			Create_user.click();
 			
 		}
-		@FindBy(xpath="/html[1]/body[1]/div[1]/section[1]/header[1]/ul[1]/li[4]/span[1]/span[1]/*[name()='svg'][1]") WebElement logout;
+		@FindBy(xpath="//span[@aria-label='logout']") WebElement logout;
 		public void Click_logout()
 		{
 			logout.click();
 			
 		}
-		
-		
+		@FindBy(xpath="/html/body/div[1]/section/main/div[3]/div[2]/div/div[1]/div/div/div/div/div/div/table/tbody/tr[2]/td[7]/span[2]/svg/path") WebElement delete_icon;
+		public void click_delete_icon()
+		{
+			delete_icon.click();
 			
+		}
+		@FindBy(xpath="//span[normalize-space()='Deactivate Now']") WebElement Deactive_now;
+		@FindBy(xpath="//span[@class='deactivate-span']") WebElement Deactivate;
+		public void click_Deactive_now()
+		{
+			Deactive_now.click();
+			
+		}
+		public void Deactivate()
+		{
+			Deactivate.click();
+			
+		}
 			
 		}
 

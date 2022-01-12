@@ -61,19 +61,19 @@ public class Create_supervisor {
 
 	}
 		@Test(priority = 2)
-		public void Login_Fhe() throws InterruptedException 
+		public void Login_Supervisor() throws InterruptedException 
 		{
 			CreateUser Cu= new CreateUser(driver);
 			Cu.Click_logout();
 			driver.close();
-			//Thread.sleep(5000);
+			Thread.sleep(5000);
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 			driver=new ChromeDriver();
 			driver.get("https://d28eejm9iuuhtp.cloudfront.net/login");
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			Thread.sleep(1000);
-			driver.findElement(By.id("username")).sendKeys("rajaf@gmail.com");
+			driver.findElement(By.id("username")).sendKeys("avika@gmail.com");
 			driver.findElement(By.id("password")).sendKeys("Test@123");
 			driver.findElement(By.xpath("//span[normalize-space()='Login']")).click();
 			Thread.sleep(7000);

@@ -16,6 +16,7 @@ import com.sita.pages.LoginPage;
 import com.sita.pages.WebdriverUtility;
 
 public class Deligation_of_amenities_for_each_BO extends BaseClass {
+	
 	public HomePage Hp;
 	
 	

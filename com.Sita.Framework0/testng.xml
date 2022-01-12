@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="Creating supervisor and fhes">
+
+  <test  name="Creating fhes">
     <classes>
-      <class name="com.sita.testcases.Deligation_of_amenities_for_each_BO"/>
-      <class name="com.sita.testcases.Assign_fhe_to_A0_B0"/>
-      <class name="com.sita.testcases.deligation_of_amenities_to_Z_Mumbai"/>
-      <class name="com.sita.testcases.Create_supervisor_fhe"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+      <class name="com.sita.testcases.Create_fhes">
+      <methods>
+      <include name="setupTest"/>
+      <include name="customer_details"/>
+      </methods>
+      </class>
+     </classes>
+      </test>
+      <test  name="Creating supervisor">
+    <classes>
+      <class name="com.sita.testcases.Create_supervisor">
+      <methods>
+      <include name="setupTest"/>
+      <include name="customer_details"/>
+      <include name="Login_Supervisor"/>
+      </methods>
+      </class>
+     </classes>
+      </test>
+      
+      
+      
+</suite> 
