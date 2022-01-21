@@ -33,6 +33,18 @@ public class WebdriverUtility {
 	}
 
 	/**
+	 * This method wait for the element to be visible
+	 * @param driver
+	 * @param element
+	 * 
+	 */
+	public void waitForElementVisibility(WebDriver driver,WebElement element)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	
+	/**
 	 * This method wait for the element to be clicked
 	 * @param element
 	 * @throws throwable
@@ -42,7 +54,7 @@ public class WebdriverUtility {
 	public void waitAndClick(WebElement element) throws InterruptedException
 	{
 		int count = 0;
-		while(count<10) {
+		while(count<40) {
 			try {
 				element.click();
 				break;

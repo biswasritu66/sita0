@@ -1,155 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Setting up reports and Test is getting Ready]]>
+    </line>
+    <line>
+      <![CDATA[Setting Done- Test Will start now]]>
+    </line>
+    <line>
+      <![CDATA[Trying to start Browser and Getting application ready]]>
+    </line>
+    <line>
+      <![CDATA[Browser and Application is up and running]]>
+    </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed >>> Reports Generated]]>
+    </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed >>> Reports Generated]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-01-11T13:50:40Z" name="Default suite" finished-at="2022-01-11T13:52:27Z" duration-ms="107062">
+  <suite started-at="2022-01-18T08:53:44Z" name="Default suite" finished-at="2022-01-18T08:54:07Z" duration-ms="22493">
     <groups>
     </groups>
-    <test started-at="2022-01-11T13:50:40Z" name="Default test" finished-at="2022-01-11T13:52:27Z" duration-ms="107062">
-      <class name="com.sita.testcases.Create_fhes">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.sita.testcases.Create_fhes@6f19ac19]" started-at="2022-01-11T19:20:40Z" name="setupTest" finished-at="2022-01-11T19:20:54Z" duration-ms="14242" status="PASS">
+    <test started-at="2022-01-18T08:53:44Z" name="Default test" finished-at="2022-01-18T08:54:07Z" duration-ms="22493">
+      <class name="com.sita.testcases.Inventory_Topup">
+        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:23:43Z" name="ExtentReportsetUp" finished-at="2022-01-18T14:23:44Z" duration-ms="1539" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Setting up reports and Test is getting Ready]]>
+            </line>
+            <line>
+              <![CDATA[Setting Done- Test Will start now]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ExtentReportsetUp -->
+        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:23:44Z" name="openingbrowser" finished-at="2022-01-18T14:23:51Z" duration-ms="6938" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Trying to start Browser and Getting application ready]]>
+            </line>
+            <line>
+              <![CDATA[Browser and Application is up and running]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openingbrowser -->
+        <test-method signature="loginApp()[pri:1, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:23:51Z" name="loginApp" finished-at="2022-01-18T14:23:53Z" duration-ms="1316" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_fhes@6f19ac19]" started-at="2022-01-11T19:20:56Z" name="customer_details" data-provider="Create_user_FHE" finished-at="2022-01-11T19:21:11Z" duration-ms="15380" status="PASS">
+        </test-method> <!-- loginApp -->
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:23:53Z" name="Screenshot" finished-at="2022-01-18T14:23:54Z" duration-ms="866" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[rajaKA]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[EMP61500]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[rajak1@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[919576543995]]>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=Inventory_Topup.loginApp()[pri:1, instance:com.sita.testcases.Inventory_Topup@301eda63] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed >>> Reports Generated]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- customer_details -->
-        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_fhes@6f19ac19]" started-at="2022-01-11T19:21:11Z" name="customer_details" data-provider="Create_user_FHE" finished-at="2022-01-11T19:21:25Z" duration-ms="13834" status="PASS">
+        </test-method> <!-- Screenshot -->
+        <test-method signature="navigate_to_homepage_click_on_Hotel_ArrowButton()[pri:2, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:23:54Z" name="navigate_to_homepage_click_on_Hotel_ArrowButton" finished-at="2022-01-18T14:24:06Z" duration-ms="12706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate_to_homepage_click_on_Hotel_ArrowButton -->
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:24:06Z" name="Screenshot" finished-at="2022-01-18T14:24:07Z" duration-ms="182" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[AnnuKA]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[EMP61501]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[rahulk1@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[919476543996]]>
+                <![CDATA[[TestResult name=navigate_to_homepage_click_on_Hotel_ArrowButton status=SUCCESS method=Inventory_Topup.navigate_to_homepage_click_on_Hotel_ArrowButton()[pri:2, instance:com.sita.testcases.Inventory_Topup@301eda63] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed >>> Reports Generated]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- customer_details -->
-        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_fhes@6f19ac19]" started-at="2022-01-11T19:21:25Z" name="customer_details" data-provider="Create_user_FHE" finished-at="2022-01-11T19:21:39Z" duration-ms="13891" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[deepakKA]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[EMP61502]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[deepakk1@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[919376543997]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Screenshot -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:24:07Z" name="closeBrowser" finished-at="2022-01-18T14:24:07Z" duration-ms="427" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- customer_details -->
-        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_fhes@6f19ac19]" started-at="2022-01-11T19:21:39Z" name="customer_details" data-provider="Create_user_FHE" finished-at="2022-01-11T19:21:53Z" duration-ms="13652" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vireshKA]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[EMP61503]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[vireshk1@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[919276543998]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customer_details -->
-        <test-method signature="customer_details(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sita.testcases.Create_fhes@6f19ac19]" started-at="2022-01-11T19:21:53Z" name="customer_details" data-provider="Create_user_FHE" finished-at="2022-01-11T19:22:07Z" duration-ms="13923" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[annuKA]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[EMP61504]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[annuk1@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[919176543999]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customer_details -->
-        <test-method signature="Login_FHE()[pri:2, instance:com.sita.testcases.Create_fhes@6f19ac19]" started-at="2022-01-11T19:22:07Z" name="Login_FHE" finished-at="2022-01-11T19:22:27Z" duration-ms="20104" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_FHE -->
-        <test-method is-config="true" signature="Closing_browser()[pri:0, instance:com.sita.testcases.Create_fhes@6f19ac19]" started-at="2022-01-11T19:22:27Z" name="Closing_browser" finished-at="2022-01-11T19:22:27Z" duration-ms="185" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Closing_browser -->
-      </class> <!-- com.sita.testcases.Create_fhes -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.sita.testcases.Inventory_Topup -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

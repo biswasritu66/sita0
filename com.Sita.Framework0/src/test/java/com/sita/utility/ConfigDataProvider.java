@@ -33,8 +33,29 @@ public class ConfigDataProvider {
 		return pro.getProperty("Browser");
 
 	}
-	public String PageURL()
+	public String dev_url()
 	{
-		return pro.getProperty("qaUrL");
+		return pro.getProperty("dev_url");
+	}
+	public String inventory_url()
+	{
+		return pro.getProperty("inventory_url");
 	}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

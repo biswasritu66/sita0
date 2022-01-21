@@ -56,7 +56,7 @@ public class BaseClass {
 	@BeforeClass
 	public void openingbrowser() {
 		Reporter.log("Trying to start Browser and Getting application ready", true);
-		driver=BrowserFactory.startApplication(driver,config.getBrowser(),config.PageURL());
+		driver=BrowserFactory.startApplication(driver,config.getBrowser(),config.inventory_url());
 		Reporter.log("Browser and Application is up and running", true);
 	}
 	@AfterClass
