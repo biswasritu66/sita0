@@ -16,7 +16,7 @@ public class Inventory_page_objects {
 	}
 	
 	
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[2]/td[6]/div[1]/img[1]") WebElement ArrowButton_hotel;
+	@FindBy(xpath="//tbody/tr[2]/td[6]/div[1]/div[2]//*[name()='svg']") WebElement ArrowButton_hotel;
 	public void Click_Hotel_ArrowButton()
 	{
 		ArrowButton_hotel.click();
@@ -47,24 +47,29 @@ public class Inventory_page_objects {
 		confirm_Button.click();
 		
 	}
-	@FindBy(xpath="//span[normalize-space()='Hotel']") WebElement Hotel_filter;
+	@FindBy(xpath="//div[normalize-space()='Hotel']") WebElement Hotel_filter;
 	public void Hotel_name_filter()
 	{
 		Hotel_filter.click();
 	}
-	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div/ul/li[3]/ul/div/div/div") WebElement Hotel_name;
-	@FindBy(xpath="//div[@class='ant-select-item-option-content'][normalize-space()='Z_Needle- Royal Group']") WebElement Z_Needle_hotel;
+	@FindBy(xpath="//div[@class='ant-select-selection-overflow']") WebElement Hotel_name;
+	@FindBy(xpath="//div[@class='ant-select-item-option-content'][normalize-space()='Z_Radisson Blu Plaza']") WebElement Z_Radisson_Blu_Plaza;
 	public void Hotel_name() throws Throwable
 	{
 		Hotel_name.click();
-		Thread.sleep(2000);
 		//Hotel_name.sendKeys("Z_Needle- Royal Group");
-		Z_Needle_hotel.click();
-		//StringBuilder Hotelname=new StringBuilder()
-		//.append("Z_Needle- Royal Group");
-		//Hotel_name.sendKeys(Hotelname);
-		//Thread.sleep(5000);
-		//wb.pressEnterKey();
+		Z_Radisson_Blu_Plaza.click();
+		
+	}
+	@FindBy(xpath="//h5[@class='ant-typography _title back-option']") WebElement Back_button;
+	public void Back_button()
+	{
+		Back_button.click();
+	}
+	@FindBy(xpath="//div[contains(text(),'History')]") WebElement History_tab;
+	public void History_tab()
+	{
+		History_tab.click();
 	}
 }
 

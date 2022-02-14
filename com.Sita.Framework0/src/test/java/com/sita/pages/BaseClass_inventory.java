@@ -28,7 +28,7 @@ import com.sita.utility.Helper;
  *
  */
 
-public class BaseClass {
+public class BaseClass_inventory {
 
 	public  WebDriver driver;
 	public ConfigDataProvider config;

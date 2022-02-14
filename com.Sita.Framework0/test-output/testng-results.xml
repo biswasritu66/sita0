@@ -26,12 +26,12 @@
       <![CDATA[Test Completed >>> Reports Generated]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-01-18T08:53:44Z" name="Default suite" finished-at="2022-01-18T08:54:07Z" duration-ms="22493">
+  <suite started-at="2022-02-11T07:19:21Z" name="Default suite" finished-at="2022-02-11T07:20:08Z" duration-ms="47880">
     <groups>
     </groups>
-    <test started-at="2022-01-18T08:53:44Z" name="Default test" finished-at="2022-01-18T08:54:07Z" duration-ms="22493">
-      <class name="com.sita.testcases.Inventory_Topup">
-        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:23:43Z" name="ExtentReportsetUp" finished-at="2022-01-18T14:23:44Z" duration-ms="1539" status="PASS">
+    <test started-at="2022-02-11T07:19:21Z" name="Default test" finished-at="2022-02-11T07:20:08Z" duration-ms="47880">
+      <class name="com.sita.testcases.deligation_of_amenities_to_Z_Mumbai">
+        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_Z_Mumbai@3abada5a]" started-at="2022-02-11T12:49:18Z" name="ExtentReportsetUp" finished-at="2022-02-11T12:49:21Z" duration-ms="2188" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and Test is getting Ready]]>
@@ -41,7 +41,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ExtentReportsetUp -->
-        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:23:44Z" name="openingbrowser" finished-at="2022-01-18T14:23:51Z" duration-ms="6938" status="PASS">
+        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_Z_Mumbai@3abada5a]" started-at="2022-02-11T12:49:21Z" name="openingbrowser" finished-at="2022-02-11T12:49:28Z" duration-ms="7858" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trying to start Browser and Getting application ready]]>
@@ -51,15 +51,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- openingbrowser -->
-        <test-method signature="loginApp()[pri:1, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:23:51Z" name="loginApp" finished-at="2022-01-18T14:23:53Z" duration-ms="1316" status="PASS">
+        <test-method signature="loginFHE_and_assigning_amenities_to_branches()[pri:3, instance:com.sita.testcases.deligation_of_amenities_to_Z_Mumbai@3abada5a]" started-at="2022-02-11T12:49:28Z" name="loginFHE_and_assigning_amenities_to_branches" finished-at="2022-02-11T12:49:51Z" duration-ms="22051" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginApp -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:23:53Z" name="Screenshot" finished-at="2022-01-18T14:23:54Z" duration-ms="866" status="PASS">
+        </test-method> <!-- loginFHE_and_assigning_amenities_to_branches -->
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_Z_Mumbai@3abada5a]" started-at="2022-02-11T12:49:51Z" name="Screenshot" finished-at="2022-02-11T12:49:51Z" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginApp status=SUCCESS method=Inventory_Topup.loginApp()[pri:1, instance:com.sita.testcases.Inventory_Topup@301eda63] output={null}]]]>
+                <![CDATA[[TestResult name=loginFHE_and_assigning_amenities_to_branches status=SUCCESS method=deligation_of_amenities_to_Z_Mumbai.loginFHE_and_assigning_amenities_to_branches()[pri:3, instance:com.sita.testcases.deligation_of_amenities_to_Z_Mumbai@3abada5a] output={null}]]]>
               </value>
             </param>
           </params>
@@ -72,15 +72,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method signature="navigate_to_homepage_click_on_Hotel_ArrowButton()[pri:2, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:23:54Z" name="navigate_to_homepage_click_on_Hotel_ArrowButton" finished-at="2022-01-18T14:24:06Z" duration-ms="12706" status="PASS">
+        <test-method signature="login_as_Z_Mumbai_accepting_all_requested_amenities()[pri:4, instance:com.sita.testcases.deligation_of_amenities_to_Z_Mumbai@3abada5a]" started-at="2022-02-11T12:49:51Z" name="login_as_Z_Mumbai_accepting_all_requested_amenities" finished-at="2022-02-11T12:50:08Z" duration-ms="17154" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigate_to_homepage_click_on_Hotel_ArrowButton -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:24:06Z" name="Screenshot" finished-at="2022-01-18T14:24:07Z" duration-ms="182" status="PASS">
+        </test-method> <!-- login_as_Z_Mumbai_accepting_all_requested_amenities -->
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_Z_Mumbai@3abada5a]" started-at="2022-02-11T12:50:08Z" name="Screenshot" finished-at="2022-02-11T12:50:08Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=navigate_to_homepage_click_on_Hotel_ArrowButton status=SUCCESS method=Inventory_Topup.navigate_to_homepage_click_on_Hotel_ArrowButton()[pri:2, instance:com.sita.testcases.Inventory_Topup@301eda63] output={null}]]]>
+                <![CDATA[[TestResult name=login_as_Z_Mumbai_accepting_all_requested_amenities status=SUCCESS method=deligation_of_amenities_to_Z_Mumbai.login_as_Z_Mumbai_accepting_all_requested_amenities()[pri:4, instance:com.sita.testcases.deligation_of_amenities_to_Z_Mumbai@3abada5a] output={null}]]]>
               </value>
             </param>
           </params>
@@ -93,11 +93,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.Inventory_Topup@301eda63]" started-at="2022-01-18T14:24:07Z" name="closeBrowser" finished-at="2022-01-18T14:24:07Z" duration-ms="427" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_Z_Mumbai@3abada5a]" started-at="2022-02-11T12:50:08Z" name="closeBrowser" finished-at="2022-02-11T12:50:08Z" duration-ms="753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.sita.testcases.Inventory_Topup -->
+      </class> <!-- com.sita.testcases.deligation_of_amenities_to_Z_Mumbai -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

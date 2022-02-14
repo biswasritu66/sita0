@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import com.sita.pageObjects.HomePage;
-import com.sita.pages.BaseClass;
+import com.sita.pages.BaseClass_dev;
 import com.sita.pages.LoginPage;
 import com.sita.pages.WebdriverUtility;
 
@@ -18,7 +18,7 @@ import com.sita.pages.WebdriverUtility;
  * @author Ritu
  *
  */
-public class Assign_fhe_to_A0_B0 extends BaseClass {
+public class Assign_fhe_to_A0_B0 extends BaseClass_dev {
 	
 	//public HomePage Hp=new HomePage(driver);
 

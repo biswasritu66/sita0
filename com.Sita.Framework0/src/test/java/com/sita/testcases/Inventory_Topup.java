@@ -15,12 +15,12 @@ import org.testng.annotations.Test;
 
 import com.sita.pageObjects.HomePage;
 import com.sita.pageObjects.Inventory_page_objects;
-import com.sita.pages.BaseClass;
+import com.sita.pages.BaseClass_inventory;
 import com.sita.pages.LoginPage;
 import com.sita.pages.WebdriverUtility;
 import com.sita.utility.ExcelDataProvider;
 
-public class Inventory_Topup extends BaseClass{
+public class Inventory_Topup extends BaseClass_inventory{
 	
 	public Inventory_page_objects IO;
 	public WebdriverUtility WU;
@@ -37,6 +37,7 @@ public class Inventory_Topup extends BaseClass{
 		loginPage.loginToAPP(excel.getStringData("Login", 1, 0), excel.getStringData("Login", 1, 1));
 
 		logger.pass("Login Success");	
+		Thread.sleep(9000);
     }
 
 	@Test(priority=2)
@@ -47,29 +48,41 @@ public class Inventory_Topup extends BaseClass{
 		
 		IO = new Inventory_page_objects(driver);
 		IO.Hotel_name_filter();
-		Thread.sleep(2000);
+		
 		IO.Hotel_name();
-		Thread.sleep(1000);
+		
 		IO.Click_Hotel_ArrowButton();
-		Thread.sleep(5000);
-		/*	JavascriptExecutor js = (JavascriptExecutor) driver;
-		// Scroll Down
+		Thread.sleep(1000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,5000)");
-		Thread.sleep(2000);
+		
 		IO.Topup_Button();
+	
 		IO.Select_Date();
-		Thread.sleep(2000);
+		
 		js.executeScript("window.scrollBy(0,5000)");
-		List<WebElement> allbuttons = driver.findElements(By.xpath("//input[@value='0']"));
+		List<WebElement> allbuttons = driver.findElements(By.xpath("//div[@class='ant-input-number-input-wrap']//input[@role='spinbutton']"));
 		for (WebElement currentbutton : allbuttons)
 		{
 			currentbutton.sendKeys("4");
 		}
+		
 		IO.Topup_Button1();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		IO.confirm_Button();
-		Thread.sleep(7000);
-	*/
+		//Thread.sleep(2000);
+		IO.Back_button();
+		IO.Back_button();
+		IO.History_tab();
+		//Thread.sleep(5000);
+		List<WebElement> History = driver.findElements(By.xpath("//tr[contains(@class,'ant-table-row ant-table-row-level-0')]"));
+
+        System.out.println(History.size());
+
+        for (WebElement webElement : History) {
+            String name = webElement.getText();
+            System.out.println(name);
+        }
 	}
 
 	

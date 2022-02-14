@@ -11,11 +11,11 @@ import org.testng.annotations.Test;
 
 import com.sita.pageObjects.HomePage;
 import com.sita.pageObjects.Select_amenities;
-import com.sita.pages.BaseClass;
+import com.sita.pages.BaseClass_dev;
 import com.sita.pages.LoginPage;
 import com.sita.pages.WebdriverUtility;
 
-public class Deligation_of_amenities_for_each_BO extends BaseClass {
+public class Deligation_of_amenities_for_each_BO extends BaseClass_dev {
 	
 	public HomePage Hp;
 	
@@ -46,7 +46,7 @@ public class Deligation_of_amenities_for_each_BO extends BaseClass {
 		Hp.BackButton();
 		//loging out supervisor
 		// moving mouse cursor to "logout" dropdown and clicking it.
-		WebElement ele = driver.findElement(By.xpath("/html/body/div[1]/section/header/div/div[3]/ul/li[6]/img"));
+		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
 	}
@@ -77,7 +77,7 @@ public class Deligation_of_amenities_for_each_BO extends BaseClass {
 		//here clicking every blank boxes in selecting amenitie quantities from excel sheet.
 		Select_amenities Sa = PageFactory.initElements(driver, Select_amenities.class);
 		Sa.Z_mumbai_units(excel.getStringData("Amenities",1,1), excel.getStringData("Amenities",2,1),
-				excel.getStringData("Amenities",3,1), excel.getStringData("Amenities",4,1));
+				excel.getStringData("Amenities",3,1));
 		Sa.Z_Puri_units(excel.getStringData("Amenities", 6, 1), excel.getStringData("Amenities",7,1),
 				excel.getStringData("Amenities", 8,1), excel.getStringData("Amenities", 9, 1));
 		Sa.Z_Bhubneswar_units(excel.getStringData("Amenities",11,1),excel.getStringData("Amenities",12,1),
@@ -87,7 +87,7 @@ public class Deligation_of_amenities_for_each_BO extends BaseClass {
 		Hp.deligate_popup_button();
 		Hp.BackButton();
 		// moving mouse cursor to "logout" dropdown and clicking it.
-		WebElement ele = driver.findElement(By.xpath("/html/body/div[1]/section/header/div/div[3]/ul/li[6]/img"));
+		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
 	}
@@ -107,7 +107,7 @@ public class Deligation_of_amenities_for_each_BO extends BaseClass {
 		wu.waitUntilPageLoad(driver);
 		Hp.Accept_popup();
 		Hp.BackButton();
-		WebElement ele = driver.findElement(By.xpath("/html/body/div[1]/section/header/div/div[3]/ul/li[6]/img"));
+		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
 		
@@ -128,7 +128,7 @@ public class Deligation_of_amenities_for_each_BO extends BaseClass {
 		wu.waitUntilPageLoad(driver);
 		Hp.Accept_popup();
 		Hp.BackButton();
-		WebElement ele = driver.findElement(By.xpath("/html/body/div[1]/section/header/div/div[3]/ul/li[6]/img"));
+		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
 	}
@@ -148,7 +148,7 @@ public class Deligation_of_amenities_for_each_BO extends BaseClass {
 		wu.waitUntilPageLoad(driver);
 		Hp.Accept_popup();
 		Hp.BackButton();
-		WebElement ele = driver.findElement(By.xpath("/html/body/div[1]/section/header/div/div[3]/ul/li[6]/img"));
+		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
 	}
