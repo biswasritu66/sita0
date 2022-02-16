@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.sita.testcases.Inventory_Topup">
+      <class name="com.sita.testcases.deligation_of_amenities_to_Z_Mumbai">
         <methods>
-          <include name="ExtentReportsetUp"/>
-          <include name="navigate_to_homepage_click_on_Hotel_ArrowButton"/>
           <include name="openingbrowser"/>
-          <include name="Screenshot"/>
+          <include name="login_as_Z_Mumbai_andZ_Puri_accepting_all_requested_amenities"/>
+          <include name="ExtentReportsetUp"/>
           <include name="closeBrowser"/>
+          <include name="Screenshot"/>
         </methods>
-      </class> <!-- com.sita.testcases.Inventory_Topup -->
+      </class> <!-- com.sita.testcases.deligation_of_amenities_to_Z_Mumbai -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

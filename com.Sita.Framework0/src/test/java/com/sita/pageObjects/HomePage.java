@@ -45,10 +45,10 @@ public class HomePage extends WebdriverUtility{
 	{
 		AssignFile_Handler.click();
 	}
-	@FindBy(xpath="//h5[normalize-space()='Naveen FHE']")WebElement NaveenFHE;
-	public void NaveenFHE()
+	@FindBy(xpath="//span[normalize-space()='Select']")WebElement RituFHE;
+	public void RituFHE()
 	{
-		NaveenFHE.click();
+		RituFHE.click();
 	}
 	@FindBy(xpath="//button[contains(@class,'assign-btn-selected')]")WebElement AssignButton;
 	public void AssignButton()
@@ -169,7 +169,6 @@ public class HomePage extends WebdriverUtility{
 		
 	}
 
-	
 }
 
 

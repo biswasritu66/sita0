@@ -50,7 +50,7 @@ public class Assign_fhe_to_A0_B0 extends BaseClass_dev {
 		Hp.Click_ConfirmButton();
 		//assigning file handler
 		Hp.AssignFile_Handler();
-		Hp.NaveenFHE();
+		Hp.RituFHE();
 		Hp.AssignButton();
 		Hp.sendButton();
 		//Click_on_BackButton

@@ -13,29 +13,19 @@ import com.sita.pageObjects.Select_amenities;
 import com.sita.pages.BaseClass_dev;
 import com.sita.pages.LoginPage;
 import com.sita.pages.WebdriverUtility;
-public class deligation_of_amenities_to_Z_Mumbai extends BaseClass_dev {
+public class deligation_of_amenities_to_BO extends BaseClass_dev {
 	
 	public HomePage Hp = new HomePage(driver);
 
 	@Test(priority=1)
-	public void loginApp() 
+	public void login_as_supervisor_and_assigning_fhe()
 	{
 		
 		logger=report.createTest("Login to Sita");
-		
 		LoginPage loginPage=PageFactory.initElements(driver, LoginPage.class);
-		
 		logger.info("Starting Application");
-		
 		loginPage.loginToAPP(excel.getStringData("Login", 0, 0),excel.getStringData("Login", 0, 1));
-		
 		logger.pass("Login Success");
-		
-	}
-	
-	@Test(priority=2)
-	public void supervisor_login_and_assigning_fhe() 
-	{
 		logger = report.createTest("click_on_ArrowButton");
 		HomePage Hp = new HomePage(driver);
 		WebdriverUtility wb = new WebdriverUtility();
@@ -43,7 +33,7 @@ public class deligation_of_amenities_to_Z_Mumbai extends BaseClass_dev {
 		logger.pass("ArrowButton_clicked");
 		Hp.Click_ConfirmButton();
 		Hp.AssignFile_Handler();
-		Hp.NaveenFHE();
+		Hp.RituFHE();
 		Hp.AssignButton();
 		Hp.sendButton();
 		Hp.BackButton();
@@ -53,8 +43,8 @@ public class deligation_of_amenities_to_Z_Mumbai extends BaseClass_dev {
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
 	}
-	@Test(priority = 3)
-	public void loginFHE_and_assigning_amenities_to_branches() throws InterruptedException 
+	@Test(priority = 2)
+	public void loginFHE_and_assigning_amenities_to_branches()  
 	{
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		loginPage.loginToAPP(excel.getStringData("LoginFHE", 0, 0), excel.getStringData("LoginFHE", 0, 1));
@@ -74,27 +64,28 @@ public class deligation_of_amenities_to_Z_Mumbai extends BaseClass_dev {
 		// Scroll Down
 		js.executeScript("window.scrollBy(0,1500)");
 		// Scroll Up
-		js.executeScript("window.scrollBy(0,-3000)");
+		js.executeScript("window.scrollBy(0,-5000)");
 		Hp.Click_on_Deligate_Button1();
-		//Thread.sleep(5000);
 		//here clicking every blank boxes in selecting amenitie quantities from excel sheet.
+		//z_mumbai_units
 		Select_amenities Sa = PageFactory.initElements(driver, Select_amenities.class);
 		Sa.Z_mumbai_units(excel.getStringData("Amenities",1,1), excel.getStringData("Amenities",2,1),
 				excel.getStringData("Amenities",3,1));
+		//z_puri_units
+		Sa.Z_Puri_units(excel.getStringData("Amenities",6,1), excel.getStringData("Amenities",7,1),
+				excel.getStringData("Amenities",8,1));
+		
 		Hp.confirm_amenities();
-		js.executeScript("window.scrollBy(0,2000)");
+		js.executeScript("window.scrollBy(0,1300)");
 		Hp.deligate_popup_button();
 		Hp.BackButton();
-		Thread.sleep(5000);
 		// moving mouse cursor to "logout" dropdown and clicking it.
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
-		//img[@class='ant-dropdown-trigger menu-avatar ant-dropdown-open']
-		//html[1]/body[1]/div[1]/section[1]/header[1]/div[1]/div[3]/ul[1]/li[2]/span[1]/img[1]
 	}
-	@Test(priority = 4)
-	public void login_as_Z_Mumbai_accepting_all_requested_amenities() 
+	@Test(priority = 3)
+	public void login_as_Z_Mumbai_andZ_Puri_accepting_all_requested_amenities() throws InterruptedException 
 	{
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		loginPage.loginToAPP(excel.getStringData("LoginBo", 0, 0), excel.getStringData("LoginBo", 0, 1));
@@ -103,13 +94,25 @@ public class deligation_of_amenities_to_Z_Mumbai extends BaseClass_dev {
 		Hp.Arrow_Button_BO();
 		Hp.Click_on_Amenitiestab();
 		Hp.Lock_Button();
-		wu.waitUntilPageLoad(driver);
+		Thread.sleep(3000);
 		Hp.Accept_all_amenities();
-		wu.waitUntilPageLoad(driver);
 		Hp.Accept_popup();
 		Hp.BackButton();
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
+		Hp.Click_on_LogoutButton();
+		loginPage.loginToAPP(excel.getStringData("LoginBo", 1, 0), excel.getStringData("LoginBo", 1, 1));
+		Hp.Arrow_Button_BO();
+		Hp.Click_on_Amenitiestab();
+		Hp.Lock_Button();
+		Thread.sleep(3000);
+		Hp.Accept_all_amenities();
+		Thread.sleep(3000);
+		Hp.Accept_popup();
+		Thread.sleep(3000);
+		Hp.BackButton();
+		WebElement ele1 = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
+		wb.mouseOver(driver, ele1);
 		Hp.Click_on_LogoutButton();
 		
 	}
