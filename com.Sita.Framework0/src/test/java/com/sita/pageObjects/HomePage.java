@@ -168,6 +168,15 @@ public class HomePage extends WebdriverUtility{
 		Accept_popup.click();
 		
 	}
+	@FindBy(xpath="//p[@class='ant-upload-text']")WebElement File_Upload ;
+
+	public void File_Upload()
+	{
+		
+		File_Upload.click();
+		
+	}
+	
 
 }
 

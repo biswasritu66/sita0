@@ -22,6 +22,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class WebdriverUtility {
 	
+	
 	/**
 	 * this method wait for 10 sec for page loading
 	 * @param driver

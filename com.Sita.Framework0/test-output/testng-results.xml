@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Setting up reports and Test is getting Ready]]>
@@ -25,13 +25,19 @@
     <line>
       <![CDATA[Test Completed >>> Reports Generated]]>
     </line>
+    <line>
+      <![CDATA[Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed >>> Reports Generated]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-02-16T04:59:46Z" name="Suite" finished-at="2022-02-16T05:00:41Z" duration-ms="54703">
+  <suite started-at="2022-02-23T07:10:48Z" name="Suite" finished-at="2022-02-23T07:11:40Z" duration-ms="52377">
     <groups>
     </groups>
-    <test started-at="2022-02-16T04:59:46Z" name="Test" finished-at="2022-02-16T05:00:41Z" duration-ms="54703">
+    <test started-at="2022-02-23T07:10:48Z" name="Test" finished-at="2022-02-23T07:11:40Z" duration-ms="52377">
       <class name="com.sita.testcases.deligation_of_amenities_to_BO">
-        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@7a1a14a4]" started-at="2022-02-16T10:29:44Z" name="ExtentReportsetUp" finished-at="2022-02-16T10:29:46Z" duration-ms="1956" status="PASS">
+        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-23T12:40:46Z" name="ExtentReportsetUp" finished-at="2022-02-23T12:40:48Z" duration-ms="1816" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and Test is getting Ready]]>
@@ -41,7 +47,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ExtentReportsetUp -->
-        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@7a1a14a4]" started-at="2022-02-16T10:29:46Z" name="openingbrowser" finished-at="2022-02-16T10:29:53Z" duration-ms="7229" status="PASS">
+        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-23T12:40:48Z" name="openingbrowser" finished-at="2022-02-23T12:40:55Z" duration-ms="7282" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trying to start Browser and Getting application ready]]>
@@ -51,15 +57,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- openingbrowser -->
-        <test-method signature="loginFHE_and_assigning_amenities_to_branches()[pri:2, instance:com.sita.testcases.deligation_of_amenities_to_BO@7a1a14a4]" started-at="2022-02-16T10:29:53Z" name="loginFHE_and_assigning_amenities_to_branches" finished-at="2022-02-16T10:30:07Z" duration-ms="13721" status="PASS">
+        <test-method signature="supervisor_login_and_assigning_fhe()[pri:1, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-23T12:40:55Z" name="supervisor_login_and_assigning_fhe" finished-at="2022-02-23T12:41:08Z" duration-ms="12645" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFHE_and_assigning_amenities_to_branches -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@7a1a14a4]" started-at="2022-02-16T10:30:07Z" name="Screenshot" finished-at="2022-02-16T10:30:07Z" duration-ms="8" status="PASS">
+        </test-method> <!-- supervisor_login_and_assigning_fhe -->
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-23T12:41:08Z" name="Screenshot" finished-at="2022-02-23T12:41:09Z" duration-ms="1056" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginFHE_and_assigning_amenities_to_branches status=SUCCESS method=deligation_of_amenities_to_BO.loginFHE_and_assigning_amenities_to_branches()[pri:2, instance:com.sita.testcases.deligation_of_amenities_to_BO@7a1a14a4] output={null}]]]>
+                <![CDATA[[TestResult name=supervisor_login_and_assigning_fhe status=SUCCESS method=deligation_of_amenities_to_BO.supervisor_login_and_assigning_fhe()[pri:1, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6] output={null}]]]>
               </value>
             </param>
           </params>
@@ -72,15 +78,81 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method signature="login_as_Z_Mumbai_andZ_Puri_accepting_all_requested_amenities()[pri:3, instance:com.sita.testcases.deligation_of_amenities_to_BO@7a1a14a4]" started-at="2022-02-16T10:30:07Z" name="login_as_Z_Mumbai_andZ_Puri_accepting_all_requested_amenities" finished-at="2022-02-16T10:30:40Z" duration-ms="32954" status="PASS">
+        <test-method signature="fhe_distribution()[pri:2, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-23T12:41:09Z" name="fhe_distribution" finished-at="2022-02-23T12:41:28Z" duration-ms="19608" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <h5 class="ant-typography _title back-option">...</h5> is not clickable at point (58, 31). Other element would receive the click: <div tabindex="-1" class="ant-modal-wrap ant-modal-centered" role="dialog" aria-labelledby="rcDialogTitle1">...</div>
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:10172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 071dc3900ab668500fcc3945a71322b3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <h5 class="ant-typography _title back-option">...</h5> is not clickable at point (58, 31). Other element would receive the click: <div tabindex="-1" class="ant-modal-wrap ant-modal-centered" role="dialog" aria-labelledby="rcDialogTitle1">...</div>
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:10172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 071dc3900ab668500fcc3945a71322b3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at com.sita.pageObjects.HomePage.BackButton(HomePage.java:67)
+	at com.sita.testcases.deligation_of_amenities_to_BO.fhe_distribution(deligation_of_amenities_to_BO.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login_as_Z_Mumbai_andZ_Puri_accepting_all_requested_amenities -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@7a1a14a4]" started-at="2022-02-16T10:30:40Z" name="Screenshot" finished-at="2022-02-16T10:30:40Z" duration-ms="0" status="PASS">
+        </test-method> <!-- fhe_distribution -->
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-23T12:41:28Z" name="Screenshot" finished-at="2022-02-23T12:41:29Z" duration-ms="859" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login_as_Z_Mumbai_andZ_Puri_accepting_all_requested_amenities status=SUCCESS method=deligation_of_amenities_to_BO.login_as_Z_Mumbai_andZ_Puri_accepting_all_requested_amenities()[pri:3, instance:com.sita.testcases.deligation_of_amenities_to_BO@7a1a14a4] output={null}]]]>
+                <![CDATA[[TestResult name=fhe_distribution status=FAILURE method=deligation_of_amenities_to_BO.fhe_distribution()[pri:2, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6] output={null}]]]>
               </value>
             </param>
           </params>
@@ -93,7 +165,98 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@7a1a14a4]" started-at="2022-02-16T10:30:40Z" name="closeBrowser" finished-at="2022-02-16T10:30:41Z" duration-ms="749" status="PASS">
+        <test-method signature="Bo_amenities_list()[pri:3, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-23T12:41:29Z" name="Bo_amenities_list" finished-at="2022-02-23T12:41:39Z" duration-ms="10061" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:10172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 071dc3900ab668500fcc3945a71322b3
+*** Element info: {Using=id, value=username}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-9HB5M8C', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\Ritu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:10172}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 071dc3900ab668500fcc3945a71322b3
+*** Element info: {Using=id, value=username}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
+	at com.sita.pages.LoginPage.loginToAPP(LoginPage.java:27)
+	at com.sita.testcases.deligation_of_amenities_to_BO.Bo_amenities_list(deligation_of_amenities_to_BO.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bo_amenities_list -->
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-23T12:41:39Z" name="Screenshot" finished-at="2022-02-23T12:41:40Z" duration-ms="399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Bo_amenities_list status=FAILURE method=deligation_of_amenities_to_BO.Bo_amenities_list()[pri:3, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed >>> Reports Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Screenshot -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-23T12:41:40Z" name="closeBrowser" finished-at="2022-02-23T12:41:40Z" duration-ms="416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

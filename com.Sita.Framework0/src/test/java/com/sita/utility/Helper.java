@@ -38,4 +38,4 @@ public class Helper {
 		Date currentDate=new Date();
 		return customFormat.format(currentDate);
 	}
-}
+}//_HH_mm_ss
