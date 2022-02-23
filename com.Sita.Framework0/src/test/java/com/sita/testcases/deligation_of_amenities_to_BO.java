@@ -21,7 +21,7 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 	
 	public HomePage Hp = new HomePage(driver);
 
-	@Test(priority=1)
+	/*@Test(priority=1)
 	public void supervisor_login_and_assigning_fhe()
 	{
 		
@@ -98,18 +98,25 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		
 		Hp.confirm_amenities();
 		Hp.File_Upload();
-		//Thread.sleep(3000);
+		Thread.sleep(2000);
 		Runtime.getRuntime().exec("C:\\Users\\Ritu\\Documents\\needle_file_upload\\fileupload1.exe");
-		//Thread.sleep(3000);
-		js.executeScript("window.scrollBy(0,1300)");
+		Thread.sleep(2000);
+		{
+			String FileName = driver.findElement(By.xpath("//span[@title='Screenshot.png']")).getText();
+			System.out.println("The Uploaded file name is--"+FileName);
+		}
+		logger=report.createTest("File Upload done successfully");
+		js.executeScript("window.scrollBy(0,2000)");
+		Thread.sleep(3000);
 		Hp.deligate_popup_button();
+		Thread.sleep(2000);
 		Hp.BackButton();
 		// moving mouse cursor to "logout" dropdown and clicking it.
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
 		logger=report.createTest("Logout from fhe");
-	}
+	}*/
 	@Test(priority = 3)
 	public void Bo_amenities_list() throws InterruptedException 
 	{
@@ -122,7 +129,16 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		Hp.Click_on_Amenitiestab();
 		Hp.Lock_Button();
 		Thread.sleep(3000);
-		Hp.Accept_all_amenities();
+		Hp.view_files_notes();///
+		{
+			String File_and_Notes = driver.findElement(By.xpath("//div[@class='download-file']")).getText();
+			System.out.println("The Uploaded file name is--"+File_and_Notes);
+		}
+		logger=report.createTest("Files & notes showing successfully");
+		Hp.Files_and_notes_Cross_button();
+		Hp.BackButton();
+		Thread.sleep(5000);
+		/*Hp.Accept_all_amenities();
 		Hp.Accept_popup();
 		Hp.BackButton();
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
@@ -143,7 +159,7 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		wb.mouseOver(driver, ele1);
 		Hp.Click_on_LogoutButton();
 		logger=report.createTest("logout from Bo");
-		
+		*/
 	}
 }
 

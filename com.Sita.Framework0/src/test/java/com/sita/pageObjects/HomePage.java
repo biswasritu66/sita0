@@ -176,9 +176,28 @@ public class HomePage extends WebdriverUtility{
 		File_Upload.click();
 		
 	}
-	
+	@FindBy(xpath="//div[@class='booking-center-content']//div[1]//div[1]//div[1]//div[2]//div[1]//div[1]//button[1]//*[name()='svg']")WebElement view_files_note_dots ;
+	@FindBy(xpath="//span[normalize-space()='View Files and Notes']")WebElement view_files_notes ;
+	@FindBy(xpath="//span[contains(text(),'Files & Notes')]")WebElement files_notes ;
+	public void view_files_notes()
+	{
+		
+		view_files_note_dots.click();
+		view_files_notes.click();
+		files_notes.click();
+		
+	}
+	@FindBy(xpath="//span[@aria-label='close']//*[name()='svg']")WebElement Files_and_notes_Cross_button ;
+
+	public void Files_and_notes_Cross_button()
+	{
+		
+		Files_and_notes_Cross_button.click();
+		
+	}
 
 }
+//(//button[@class='ant-btn ant-btn-icon-only ant-btn-background-ghost btn-icon ant-dropdown-trigger'])[1]
 
 
 
