@@ -8,6 +8,7 @@
           <include name="openingbrowser"/>
           <include name="ExtentReportsetUp"/>
           <include name="fhe_distribution"/>
+          <include name="supervisor_login_and_assigning_fhe"/>
           <include name="closeBrowser"/>
           <include name="Bo_amenities_list"/>
           <include name="Screenshot"/>

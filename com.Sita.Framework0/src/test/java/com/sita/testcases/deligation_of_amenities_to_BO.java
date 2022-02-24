@@ -21,8 +21,8 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 	
 	public HomePage Hp = new HomePage(driver);
 
-	/*@Test(priority=1)
-	public void supervisor_login_and_assigning_fhe()
+	@Test(priority=1)
+	public void supervisor_login_and_assigning_fhe() throws InterruptedException
 	{
 		
 		logger=report.createTest("Login as supervisor");
@@ -36,9 +36,10 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		Hp.Click_ConfirmButton();
 		Hp.AssignFile_Handler();
 		Hp.RituFHE();
-		logger=report.createTest("Assign Fhe Success");
+		Thread.sleep(2000);
 		Hp.AssignButton();
 		Hp.sendButton();
+		logger=report.createTest("Assign Fhe Success");
 		Hp.BackButton();
 		//loging out supervisor
 		// moving mouse cursor to "logout" dropdown and clicking it.
@@ -64,7 +65,6 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		{
 			selectbutton.click();
 		}
-		//deligation of amenities
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		// Scroll Down
 		js.executeScript("window.scrollBy(0,1500)");
@@ -116,11 +116,12 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
 		logger=report.createTest("Logout from fhe");
-	}*/
+	}
 	@Test(priority = 3)
 	public void Bo_amenities_list() throws InterruptedException 
 	{
 		logger=report.createTest("Login as BO");
+		//login as BO Mumbai
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		loginPage.loginToAPP(excel.getStringData("LoginBo", 0, 0), excel.getStringData("LoginBo", 0, 1));
 		HomePage Hp = new HomePage(driver);
@@ -129,7 +130,7 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		Hp.Click_on_Amenitiestab();
 		Hp.Lock_Button();
 		Thread.sleep(3000);
-		Hp.view_files_notes();///
+		Hp.view_files_notes();
 		{
 			String File_and_Notes = driver.findElement(By.xpath("//div[@class='download-file']")).getText();
 			System.out.println("The Uploaded file name is--"+File_and_Notes);
@@ -137,37 +138,39 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		logger=report.createTest("Files & notes showing successfully");
 		Hp.Files_and_notes_Cross_button();
 		Hp.BackButton();
-		Thread.sleep(5000);
-		/*Hp.Accept_all_amenities();
+		Hp.Accept_all_amenities();
+		Thread.sleep(2000);
 		Hp.Accept_popup();
+		logger=report.createTest("Requested amenities accepted successfully");
 		Hp.BackButton();
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
+		//login as BO Puri
 		loginPage.loginToAPP(excel.getStringData("LoginBo", 1, 0), excel.getStringData("LoginBo", 1, 1));
 		Hp.Arrow_Button_BO();
 		Hp.Click_on_Amenitiestab();
 		Hp.Lock_Button();
 		Thread.sleep(3000);
 		Hp.Accept_all_amenities();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		Hp.Accept_popup();
-		logger=report.createTest("accecpt all amenities");
-		Thread.sleep(3000);
+		logger=report.createTest("Requested amenities accepted successfully");
+		//Thread.sleep(3000);
 		Hp.BackButton();
 		WebElement ele1 = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele1);
 		Hp.Click_on_LogoutButton();
 		logger=report.createTest("logout from Bo");
-		*/
+		
 	}
 }
 
 
-	//<include name="supervisor_login_and_assigning_fhe"></include>
-	//<include name="fhe_distribution"></include>
-	
 //<include name="supervisor_login_and_assigning_fhe"></include>
+//<include name="fhe_distribution"></include>
+
+	
 	
 	
 	
