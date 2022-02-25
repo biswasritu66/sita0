@@ -39,14 +39,14 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		Thread.sleep(2000);
 		Hp.AssignButton();
 		Hp.sendButton();
-		logger=report.createTest("Assign Fhe Success");
+		logger=report.createTest("Assign FHE");
 		Hp.BackButton();
 		//loging out supervisor
 		// moving mouse cursor to "logout" dropdown and clicking it.
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
-		logger=report.createTest("Logout Success");
+		logger=report.createTest("Logout Successfully By Supervisor");
 	}
 	@Test(priority = 2)
 	public void fhe_distribution() throws IOException, InterruptedException  
@@ -79,6 +79,7 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 			
 			Sa.Z_mumbai_units(excel.getStringData("Amenities",1,2), excel.getStringData("Amenities",2,2),
 				excel.getStringData("Amenities",3,2));
+			Thread.sleep(3000);
 		
 			String expectedHeading = "more than allowed limit";
     	//Storing the text of the heading in a string
@@ -88,7 +89,7 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
     	else
           	System.out.println("The expected heading doesn't match the actual heading --- "+heading);
 		}
-		logger=report.createTest("more than allocated unit not accepted");
+		logger=report.createTest("Check if units can not be distributed more than total units");
 		//valid no of units
 		Sa.Z_mumbai_units(excel.getStringData("Amenities",1,1), excel.getStringData("Amenities",2,1),
 				excel.getStringData("Amenities",3,1));
@@ -105,7 +106,7 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 			String FileName = driver.findElement(By.xpath("//span[@title='Screenshot.png']")).getText();
 			System.out.println("The Uploaded file name is--"+FileName);
 		}
-		logger=report.createTest("File Upload done successfully");
+		logger=report.createTest("File Upload successfully for FHE");
 		js.executeScript("window.scrollBy(0,2000)");
 		Thread.sleep(3000);
 		Hp.deligate_popup_button();
@@ -115,12 +116,12 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
-		logger=report.createTest("Logout from fhe");
+		logger=report.createTest("Logout from FHE");
 	}
 	@Test(priority = 3)
 	public void Bo_amenities_list() throws InterruptedException 
 	{
-		logger=report.createTest("Login as BO");
+		logger=report.createTest("Login as BO Mumbai");
 		//login as BO Mumbai
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		loginPage.loginToAPP(excel.getStringData("LoginBo", 0, 0), excel.getStringData("LoginBo", 0, 1));
@@ -135,18 +136,20 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 			String File_and_Notes = driver.findElement(By.xpath("//div[@class='download-file']")).getText();
 			System.out.println("The Uploaded file name is--"+File_and_Notes);
 		}
-		logger=report.createTest("Files & notes showing successfully");
+		logger=report.createTest("Check if BO Mumbai can view the file and notes sent by FHE");
 		Hp.Files_and_notes_Cross_button();
 		Hp.BackButton();
 		Hp.Accept_all_amenities();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		Hp.Accept_popup();
-		logger=report.createTest("Requested amenities accepted successfully");
+		logger=report.createTest("Check if BO Mumbai can accept all the amenities");
 		Hp.BackButton();
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
+		logger=report.createTest("logout from Bo Mumbai");
 		//login as BO Puri
+		logger=report.createTest("Login as BO Puri");
 		loginPage.loginToAPP(excel.getStringData("LoginBo", 1, 0), excel.getStringData("LoginBo", 1, 1));
 		Hp.Arrow_Button_BO();
 		Hp.Click_on_Amenitiestab();
@@ -155,13 +158,13 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		Hp.Accept_all_amenities();
 		Thread.sleep(2000);
 		Hp.Accept_popup();
-		logger=report.createTest("Requested amenities accepted successfully");
+		logger=report.createTest("Check if BO Puri can accept lesser units what is assign to them ");
 		//Thread.sleep(3000);
 		Hp.BackButton();
 		WebElement ele1 = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele1);
 		Hp.Click_on_LogoutButton();
-		logger=report.createTest("logout from Bo");
+		logger=report.createTest("logout from Bo Puri");
 		
 	}
 }
