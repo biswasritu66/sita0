@@ -63,6 +63,4 @@ public class Select_amenities {
 	
 	
 	
-	
-	
 }

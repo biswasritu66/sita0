@@ -108,9 +108,29 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		}
 		logger=report.createTest("File Upload successfully for FHE");
 		js.executeScript("window.scrollBy(0,2000)");
-		Thread.sleep(3000);
-		Hp.deligate_popup_button();
 		Thread.sleep(2000);
+		Hp.deligate_popup_button();
+		// Scroll Down
+		js.executeScript("window.scrollBy(0,1500)");
+		// Scroll Up
+		js.executeScript("window.scrollBy(0,-5000)");
+		Thread.sleep(2000);
+		{
+			String Remaining_units = driver.findElement(By.xpath("(//span[@class='ant-tag ant-tag-has-color requirement rounded unbordered pconfirmed'])[1]")).getText();
+			System.out.println("The Remaining_units"+Remaining_units);
+		}
+		logger=report.createTest("Remaining units are displaying with correct calculation");
+		Thread.sleep(2000);
+		/*for (WebElement selectbutton : allbuttons) 
+		{
+			selectbutton.click();
+		}
+		Thread.sleep(2000);
+		Hp.Click_on_Deligate_Button2();
+		Sa.Z_mumbai_units(excel.getStringData("Amenities",1,3), excel.getStringData("Amenities",2,1),
+				excel.getStringData("Amenities",3,1));
+		Hp.confirm_amenities();
+		*/
 		Hp.BackButton();
 		// moving mouse cursor to "logout" dropdown and clicking it.
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
@@ -148,7 +168,9 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
 		logger=report.createTest("logout from Bo Mumbai");
+		
 		//login as BO Puri
+		//LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		logger=report.createTest("Login as BO Puri");
 		loginPage.loginToAPP(excel.getStringData("LoginBo", 1, 0), excel.getStringData("LoginBo", 1, 1));
 		Hp.Arrow_Button_BO();
@@ -157,11 +179,14 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		Thread.sleep(3000);
 		Hp.Accept_all_amenities();
 		Thread.sleep(2000);
+		Hp.Bo_amenitie_box();
+		Thread.sleep(2000);
 		Hp.Accept_popup();
 		logger=report.createTest("Check if BO Puri can accept lesser units what is assign to them ");
 		//Thread.sleep(3000);
 		Hp.BackButton();
 		WebElement ele1 = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
+		//WebdriverUtility wb = new WebdriverUtility();
 		wb.mouseOver(driver, ele1);
 		Hp.Click_on_LogoutButton();
 		logger=report.createTest("logout from Bo Puri");
@@ -170,9 +195,9 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 }
 
 
+
 //<include name="supervisor_login_and_assigning_fhe"></include>
 //<include name="fhe_distribution"></include>
-
 	
 	
 	

@@ -32,12 +32,12 @@
       <![CDATA[Test Completed >>> Reports Generated]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-02-25T07:13:37Z" name="Suite" finished-at="2022-02-25T07:15:45Z" duration-ms="127763">
+  <suite started-at="2022-02-25T14:35:11Z" name="Suite" finished-at="2022-02-25T14:37:59Z" duration-ms="167710">
     <groups>
     </groups>
-    <test started-at="2022-02-25T07:13:37Z" name="Test" finished-at="2022-02-25T07:15:45Z" duration-ms="127763">
+    <test started-at="2022-02-25T14:35:11Z" name="Test" finished-at="2022-02-25T14:37:59Z" duration-ms="167710">
       <class name="com.sita.testcases.deligation_of_amenities_to_BO">
-        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T12:43:33Z" name="ExtentReportsetUp" finished-at="2022-02-25T12:43:37Z" duration-ms="4276" status="PASS">
+        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:05:07Z" name="ExtentReportsetUp" finished-at="2022-02-25T20:05:11Z" duration-ms="4383" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and Test is getting Ready]]>
@@ -47,7 +47,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ExtentReportsetUp -->
-        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T12:43:37Z" name="openingbrowser" finished-at="2022-02-25T12:43:48Z" duration-ms="11030" status="PASS">
+        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:05:11Z" name="openingbrowser" finished-at="2022-02-25T20:05:24Z" duration-ms="12857" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trying to start Browser and Getting application ready]]>
@@ -57,11 +57,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- openingbrowser -->
-        <test-method signature="supervisor_login_and_assigning_fhe()[pri:1, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T12:43:48Z" name="supervisor_login_and_assigning_fhe" finished-at="2022-02-25T12:44:13Z" duration-ms="24684" status="PASS">
+        <test-method signature="supervisor_login_and_assigning_fhe()[pri:1, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:05:24Z" name="supervisor_login_and_assigning_fhe" finished-at="2022-02-25T20:05:55Z" duration-ms="30738" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- supervisor_login_and_assigning_fhe -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T12:44:13Z" name="Screenshot" finished-at="2022-02-25T12:44:15Z" duration-ms="2101" status="PASS">
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:05:55Z" name="Screenshot" finished-at="2022-02-25T20:05:57Z" duration-ms="1921" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,11 +78,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method signature="fhe_distribution()[pri:2, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T12:44:15Z" name="fhe_distribution" finished-at="2022-02-25T12:44:54Z" duration-ms="39030" status="PASS">
+        <test-method signature="fhe_distribution()[pri:2, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:05:57Z" name="fhe_distribution" finished-at="2022-02-25T20:06:50Z" duration-ms="53636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fhe_distribution -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T12:44:54Z" name="Screenshot" finished-at="2022-02-25T12:44:54Z" duration-ms="275" status="PASS">
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:06:50Z" name="Screenshot" finished-at="2022-02-25T20:06:51Z" duration-ms="377" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,11 +99,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method signature="Bo_amenities_list()[pri:3, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T12:44:54Z" name="Bo_amenities_list" finished-at="2022-02-25T12:45:43Z" duration-ms="49187" status="PASS">
+        <test-method signature="Bo_amenities_list()[pri:3, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:06:51Z" name="Bo_amenities_list" finished-at="2022-02-25T20:07:57Z" duration-ms="66226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Bo_amenities_list -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T12:45:43Z" name="Screenshot" finished-at="2022-02-25T12:45:44Z" duration-ms="291" status="PASS">
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:07:57Z" name="Screenshot" finished-at="2022-02-25T20:07:57Z" duration-ms="307" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -120,7 +120,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T12:45:44Z" name="closeBrowser" finished-at="2022-02-25T12:45:45Z" duration-ms="1064" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:07:57Z" name="closeBrowser" finished-at="2022-02-25T20:07:59Z" duration-ms="1566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

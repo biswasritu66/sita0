@@ -195,6 +195,27 @@ public class HomePage extends WebdriverUtility{
 		Files_and_notes_Cross_button.click();
 		
 	}
+	@FindBy(xpath="(//span[@class='ant-tag ant-tag-has-color requirement rounded unbordered confirmed'])[1]")WebElement Remaining_units ;
+
+	public void Remaining_units()
+	{
+		
+		Remaining_units.click();
+		
+	}
+	@FindBy(xpath="//button[@class='ant-btn monument-send-request-btn ']")WebElement Deligate_Button_for_Amenities2;
+	public void Click_on_Deligate_Button2()
+	{
+		Deligate_Button_for_Amenities2.click();
+	}
+	@FindBy(xpath="//tbody/tr[2]/td[2]/div[1]/div[1]/span[2]")WebElement Bo_amenitie_box;
+
+	public void Bo_amenitie_box()
+	{
+		Bo_amenitie_box.click();
+		
+	}
+	
 
 }
 //(//button[@class='ant-btn ant-btn-icon-only ant-btn-background-ghost btn-icon ant-dropdown-trigger'])[1]
