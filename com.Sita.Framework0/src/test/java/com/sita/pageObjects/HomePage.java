@@ -215,7 +215,34 @@ public class HomePage extends WebdriverUtility{
 		Bo_amenitie_box.click();
 		
 	}
-	
+	@FindBy(xpath="//div[2]//div[2]//div[2]//div[1]//div[1]//div[2]//div[1]//div[1]//button[1]//span[1]")WebElement Select_button;
+
+	public void Hotel_Select_button()
+	{
+		Select_button.click();
+		
+	}
+	@FindBy(xpath="(//button[@class='ant-btn booking-center-card-action book-btn'])[1]")WebElement Book_button;
+
+	public void Book_button()
+	{
+		Book_button.click();
+		
+	}
+	@FindBy(xpath="//div[@class='show-more']")WebElement Show_more_poc;
+
+	public void Show_more_poc()
+	{
+		Show_more_poc.click();
+		
+	}
+	@FindBy(xpath="(//div[@class='select-item'])[5]")WebElement Ritu_poc;
+
+	public void Ritu_poc()
+	{
+		Ritu_poc.click();
+		
+	}
 
 }
 //(//button[@class='ant-btn ant-btn-icon-only ant-btn-background-ghost btn-icon ant-dropdown-trigger'])[1]
