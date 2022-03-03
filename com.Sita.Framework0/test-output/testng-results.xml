@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Setting up reports and Test is getting Ready]]>
@@ -19,25 +19,13 @@
     <line>
       <![CDATA[Test Completed >>> Reports Generated]]>
     </line>
-    <line>
-      <![CDATA[Test is about to end]]>
-    </line>
-    <line>
-      <![CDATA[Test Completed >>> Reports Generated]]>
-    </line>
-    <line>
-      <![CDATA[Test is about to end]]>
-    </line>
-    <line>
-      <![CDATA[Test Completed >>> Reports Generated]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-02-25T14:35:11Z" name="Suite" finished-at="2022-02-25T14:37:59Z" duration-ms="167710">
+  <suite started-at="2022-03-03T10:20:08Z" name="Default suite" finished-at="2022-03-03T10:20:51Z" duration-ms="43198">
     <groups>
     </groups>
-    <test started-at="2022-02-25T14:35:11Z" name="Test" finished-at="2022-02-25T14:37:59Z" duration-ms="167710">
-      <class name="com.sita.testcases.deligation_of_amenities_to_BO">
-        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:05:07Z" name="ExtentReportsetUp" finished-at="2022-02-25T20:05:11Z" duration-ms="4383" status="PASS">
+    <test started-at="2022-03-03T10:20:08Z" name="Default test" finished-at="2022-03-03T10:20:51Z" duration-ms="43198">
+      <class name="com.sita.testcases.Hotel">
+        <test-method is-config="true" signature="ExtentReportsetUp()[pri:0, instance:com.sita.testcases.Hotel@5f9be66c]" started-at="2022-03-03T15:50:06Z" name="ExtentReportsetUp" finished-at="2022-03-03T15:50:08Z" duration-ms="1866" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and Test is getting Ready]]>
@@ -47,7 +35,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ExtentReportsetUp -->
-        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:05:11Z" name="openingbrowser" finished-at="2022-02-25T20:05:24Z" duration-ms="12857" status="PASS">
+        <test-method is-config="true" signature="openingbrowser()[pri:0, instance:com.sita.testcases.Hotel@5f9be66c]" started-at="2022-03-03T15:50:08Z" name="openingbrowser" finished-at="2022-03-03T15:50:16Z" duration-ms="7276" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trying to start Browser and Getting application ready]]>
@@ -57,15 +45,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- openingbrowser -->
-        <test-method signature="supervisor_login_and_assigning_fhe()[pri:1, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:05:24Z" name="supervisor_login_and_assigning_fhe" finished-at="2022-02-25T20:05:55Z" duration-ms="30738" status="PASS">
+        <test-method signature="Loging_to_mail()[pri:3, instance:com.sita.testcases.Hotel@5f9be66c]" started-at="2022-03-03T15:50:16Z" name="Loging_to_mail" finished-at="2022-03-03T15:50:50Z" duration-ms="34619" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- supervisor_login_and_assigning_fhe -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:05:55Z" name="Screenshot" finished-at="2022-02-25T20:05:57Z" duration-ms="1921" status="PASS">
+        </test-method> <!-- Loging_to_mail -->
+        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.Hotel@5f9be66c]" started-at="2022-03-03T15:50:50Z" name="Screenshot" finished-at="2022-03-03T15:50:51Z" duration-ms="726" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=supervisor_login_and_assigning_fhe status=SUCCESS method=deligation_of_amenities_to_BO.supervisor_login_and_assigning_fhe()[pri:1, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6] output={null}]]]>
+                <![CDATA[[TestResult name=Loging_to_mail status=SUCCESS method=Hotel.Loging_to_mail()[pri:3, instance:com.sita.testcases.Hotel@5f9be66c] output={null}]]]>
               </value>
             </param>
           </params>
@@ -78,53 +66,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- Screenshot -->
-        <test-method signature="fhe_distribution()[pri:2, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:05:57Z" name="fhe_distribution" finished-at="2022-02-25T20:06:50Z" duration-ms="53636" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fhe_distribution -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:06:50Z" name="Screenshot" finished-at="2022-02-25T20:06:51Z" duration-ms="377" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fhe_distribution status=SUCCESS method=deligation_of_amenities_to_BO.fhe_distribution()[pri:2, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test is about to end]]>
-            </line>
-            <line>
-              <![CDATA[Test Completed >>> Reports Generated]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Screenshot -->
-        <test-method signature="Bo_amenities_list()[pri:3, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:06:51Z" name="Bo_amenities_list" finished-at="2022-02-25T20:07:57Z" duration-ms="66226" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Bo_amenities_list -->
-        <test-method is-config="true" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:07:57Z" name="Screenshot" finished-at="2022-02-25T20:07:57Z" duration-ms="307" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Bo_amenities_list status=SUCCESS method=deligation_of_amenities_to_BO.Bo_amenities_list()[pri:3, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test is about to end]]>
-            </line>
-            <line>
-              <![CDATA[Test Completed >>> Reports Generated]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Screenshot -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.deligation_of_amenities_to_BO@61544ae6]" started-at="2022-02-25T20:07:57Z" name="closeBrowser" finished-at="2022-02-25T20:07:59Z" duration-ms="1566" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.sita.testcases.Hotel@5f9be66c]" started-at="2022-03-03T15:50:51Z" name="closeBrowser" finished-at="2022-03-03T15:50:51Z" duration-ms="539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.sita.testcases.deligation_of_amenities_to_BO -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.sita.testcases.Hotel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
