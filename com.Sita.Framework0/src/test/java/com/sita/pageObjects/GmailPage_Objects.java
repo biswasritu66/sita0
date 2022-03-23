@@ -69,12 +69,13 @@ public class GmailPage_Objects {
 			e.printStackTrace();
 		}
 	}
-	
-	@FindBy(xpath="//a[normalize-space()='View entire message']") WebElement View_entire_message ;
-	public void View_entire_message() 
+	@FindBy(xpath="//a[normalize-space()='View entire message']") WebElement View_entire_message;
+	public void View_entire_message()
 	{
 		View_entire_message.click();
+		
 	}
+	
 	
 	
 	

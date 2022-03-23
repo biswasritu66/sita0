@@ -35,9 +35,11 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		Hp.Click_ArrowButton_of_supervisor();
 		Hp.Click_ConfirmButton();
 		Hp.AssignFile_Handler();
+		Thread.sleep(3000);
 		Hp.RituFHE();
 		Thread.sleep(2000);
 		Hp.AssignButton();
+		Thread.sleep(2000);
 		Hp.sendButton();
 		logger=report.createTest("Assign FHE");
 		Hp.BackButton();
@@ -100,16 +102,19 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		Hp.confirm_amenities();
 		Hp.File_Upload();
 		Thread.sleep(2000);
-		Runtime.getRuntime().exec("C:\\Users\\Ritu\\Documents\\needle_file_upload\\fileupload1.exe");
+		Runtime.getRuntime().exec("C:\\Users\\Ritu\\Documents\\sita_file_upload\\fileupload.exe");
 		Thread.sleep(2000);
+		js.executeScript("window.scrollBy(0,2000)");
+		WebElement deligate_popup_button=driver.findElement(By.xpath("//span[normalize-space()='Delegate']"));
+		//js.executeScript("arguments[0].scrollIntoView();", deligate_popup_button);
 		{
-			String FileName = driver.findElement(By.xpath("//span[@title='Screenshot.png']")).getText();
+			String FileName = driver.findElement(By.xpath("//span[@class='ant-upload-list-item-name']")).getText();
 			System.out.println("The Uploaded file name is--"+FileName);
 		}
 		logger=report.createTest("File Upload successfully for FHE");
-		js.executeScript("window.scrollBy(0,2000)");
+		
 		Thread.sleep(2000);
-		Hp.deligate_popup_button();
+		deligate_popup_button.click();
 		// Scroll Down
 		js.executeScript("window.scrollBy(0,1500)");
 		// Scroll Up
@@ -143,6 +148,7 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 	{
 		logger=report.createTest("Login as BO Mumbai");
 		//login as BO Mumbai
+		
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		loginPage.loginToAPP(excel.getStringData("LoginBo", 0, 0), excel.getStringData("LoginBo", 0, 1));
 		HomePage Hp = new HomePage(driver);

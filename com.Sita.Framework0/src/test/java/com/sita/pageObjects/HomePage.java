@@ -187,6 +187,15 @@ public class HomePage extends WebdriverUtility{
 		files_notes.click();
 		
 	}
+	@FindBy(xpath="//span[normalize-space()='View Files and Notes']")WebElement view_files_notes1 ;
+	@FindBy(xpath="//span[contains(text(),'Files & Notes')]")WebElement files_notes1 ;
+	public void view_files_notes_for_poc()
+	{
+		
+		view_files_notes1.click();
+		files_notes1.click();
+		
+	}
 	@FindBy(xpath="//span[@aria-label='close']//*[name()='svg']")WebElement Files_and_notes_Cross_button ;
 
 	public void Files_and_notes_Cross_button()
@@ -243,9 +252,102 @@ public class HomePage extends WebdriverUtility{
 		Ritu_poc.click();
 		
 	}
+	@FindBy(xpath="//div[@class='ant-col']//span[@class='ant-typography']//*[name()='svg']")WebElement downarrow_expand_button;
 
+	public void Expand_button()
+	{
+		downarrow_expand_button.click();
+		
+	}
+	
+	@FindBy(xpath="//span[@class='ant-tag ant-tag-geekblue geekblue   ']")WebElement Requested_Status;
+	public void Status1()
+	{
+		//Requested_Status.getText();
+		System.out.println(Requested_Status.getText());
+	}
+	@FindBy(xpath="//span[@class='ant-tag ant-tag-warning warning   ']")WebElement Partially_Confirmed_Status;
+	public void Status2()
+	{
+		//Requested_Status.getText();
+		System.out.println(Partially_Confirmed_Status.getText());
+	}
+	@FindBy(xpath="(//span[@class='ant-tag ant-tag-success success   '])[1]")WebElement Confirmed_Status;
+	public void Status3()
+	{
+		//Requested_Status.getText();
+		System.out.println(Confirmed_Status.getText());
+	}
+	@FindBy(xpath="(//div[@class='ant-dropdown-trigger'])[1]")WebElement downarrow_status_button1;
+	@FindBy(xpath="(//div[@class='ant-dropdown-trigger'])[2]")WebElement downarrow_status_button2;
+	@FindBy(xpath="(//div[@class='ant-dropdown-trigger'])[3]")WebElement downarrow_status_button3;
+	@FindBy(xpath="(//div[@class='ant-dropdown-trigger'])[4]")WebElement downarrow_status_button4;
+	@FindBy(xpath="//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed']")WebElement confirm_buttom1;
+	@FindBy(id="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[1]")WebElement confirm_buttom2;
+	@FindBy(xpath="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[2]")WebElement confirm_buttom3;
+	@FindBy(xpath="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[3]")WebElement confirm_buttom4;
+	
+	public void status_button1()
+	{
+		downarrow_status_button1.click();
+		confirm_buttom1.click();
+		  
+	}
+	public void status_button2() throws InterruptedException 
+	{
+		downarrow_status_button2.click();
+		//Thread.sleep(2000);
+		//confirm_buttom2.click();
+	}
+	public void status_button3()
+	{
+		downarrow_status_button3.click();
+		confirm_buttom3.click();
+	}
+	public void status_button4()
+	{
+		downarrow_status_button4.click();
+		confirm_buttom4.click();
+	}
+	@FindBy(xpath="//span[normalize-space()='View History']")WebElement View_History;
+	@FindBy(xpath="//div[@class='ant-list-item-meta-description']")WebElement Booking_History;
+	@FindBy(xpath="//span[normalize-space()='Done']")WebElement Done_Button;
+	public void View_History() throws InterruptedException
+	{
+		View_History.click();
+		System.out.println(Booking_History.getText());
+		//Thread.sleep(3000);
+		Done_Button.click();
+	}
+	@FindBy(xpath="(//input[@class='ant-input'])[1]")WebElement ref_box1;
+	@FindBy(xpath="(//input[@class='ant-input'])[2]")WebElement ref_box2;
+	@FindBy(xpath="//span[normalize-space()='Save Changes']")WebElement Save_Changes;
+	public void Ref_box1()
+	{
+		ref_box1.sendKeys("123");
+		
+	}
+	public void Ref_box2()
+	{
+		ref_box2.sendKeys("123");
+		
+	}
+	public void Save_Changes_button()
+	{
+		Save_Changes.click();
+		
+	}
+	
+	@FindBy(xpath="(//td[@class='ant-table-cell'])[2]")WebElement Room_category_no;
+	@FindBy(xpath="(//td[@class='ant-table-cell'])[3]")WebElement Meal_Plan;
+	public void Room_category_no()
+	{
+		System.out.println(Room_category_no.getText());
+		System.out.println(Meal_Plan.getText());
+	}
 }
-//(//button[@class='ant-btn ant-btn-icon-only ant-btn-background-ghost btn-icon ant-dropdown-trigger'])[1]
+
+
 
 
 
