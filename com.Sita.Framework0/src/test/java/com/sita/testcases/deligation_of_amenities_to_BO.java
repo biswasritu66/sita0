@@ -126,16 +126,7 @@ public class deligation_of_amenities_to_BO extends BaseClass_dev {
 		}
 		logger=report.createTest("Remaining units are displaying with correct calculation");
 		Thread.sleep(2000);
-		/*for (WebElement selectbutton : allbuttons) 
-		{
-			selectbutton.click();
-		}
-		Thread.sleep(2000);
-		Hp.Click_on_Deligate_Button2();
-		Sa.Z_mumbai_units(excel.getStringData("Amenities",1,3), excel.getStringData("Amenities",2,1),
-				excel.getStringData("Amenities",3,1));
-		Hp.confirm_amenities();
-		*/
+		
 		Hp.BackButton();
 		// moving mouse cursor to "logout" dropdown and clicking it.
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));

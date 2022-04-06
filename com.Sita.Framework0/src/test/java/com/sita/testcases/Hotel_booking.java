@@ -9,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.sita.pageObjects.GmailPage_Objects;
@@ -23,7 +24,7 @@ public class Hotel_booking extends BaseClass_dev {
 	public WebdriverUtility wb = new WebdriverUtility();
 	//public JavascriptExecutor js = (JavascriptExecutor) driver;
 	
-@Test(priority=1)
+	@Test(priority = 1)
 	public void supervisor_login_and_assigning_fhe() throws InterruptedException
 	{
 		
@@ -33,8 +34,9 @@ public class Hotel_booking extends BaseClass_dev {
 		loginPage.loginToAPP(excel.getStringData("Login", 0, 0),excel.getStringData("Login", 0, 1));
 		logger.pass("Login Success");
 		HomePage Hp = new HomePage(driver);
-		//WebdriverUtility wb = new WebdriverUtility();
+		
 		Hp.Click_ArrowButton_of_supervisor();
+		
 		Hp.Click_ConfirmButton();
 		Thread.sleep(2000);
 		Hp.AssignFile_Handler();
@@ -42,6 +44,7 @@ public class Hotel_booking extends BaseClass_dev {
 		Hp.RituFHE();
 		Thread.sleep(2000);
 		Hp.AssignButton();
+		Thread.sleep(2000);
 		Hp.sendButton();
 		logger=report.createTest("Assign FHE");
 		Hp.BackButton();
@@ -55,18 +58,19 @@ public class Hotel_booking extends BaseClass_dev {
 	@Test(priority = 2)
 	public void fhe_distribution() throws IOException, InterruptedException  
 	{
+		
 		logger=report.createTest("Login as FHE");
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		loginPage.loginToAPP(excel.getStringData("LoginFHE", 0, 0), excel.getStringData("LoginFHE", 0, 1));
 		HomePage Hp = new HomePage(driver);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		Thread.sleep(2000);
 		Hp.Click_ArrowButtonFHE();
 		Hp.Click_on_BookingCentre();
 		Hp.Room_category_no();
 		logger=report.createTest("Room_category,no and Meal Plan is showing");
-		
 		Hp.Hotel_Select_button();
-		//logger=report.createTest("bookings can be processed individually");
 		Hp.Book_button();
 		logger=report.createTest("bookings can be processed individually");
 		Thread.sleep(2000);
@@ -75,7 +79,7 @@ public class Hotel_booking extends BaseClass_dev {
 		WebElement Ritu_Poc = driver.findElement(By.xpath("//h3[@class='book-item-sub-header']"));
 		js.executeScript("arguments[0].scrollIntoView();", Ritu_Poc);
 		Hp.Ritu_poc();
-		//Hp.Show_more_poc();
+		
 		Thread.sleep(2000);
 		Hp.File_Upload();
 		Thread.sleep(3000);
@@ -91,13 +95,12 @@ public class Hotel_booking extends BaseClass_dev {
 		WebElement Confirm_button = driver.findElement(By.xpath("//span[normalize-space()='Confirm']"));
 		//js.executeScript("arguments[0].scrollIntoView();", Confirm_button);
 		Confirm_button.click();
-		Thread.sleep(7000);
+		Thread.sleep(2000);
 		logger=report.createTest("mail sent successfully to poc");
 		Thread.sleep(2000);
 		Hp.BackButton();
 		
 		//loging out supervisor
-		// moving mouse cursor to "logout" dropdown and clicking it.
 		WebElement ele = driver.findElement(By.xpath("//img[@class='ant-dropdown-trigger menu-avatar']"));
 		wb.mouseOver(driver, ele);
 		Hp.Click_on_LogoutButton();
@@ -105,7 +108,7 @@ public class Hotel_booking extends BaseClass_dev {
 		
 	}
 	@Test(priority = 3)
-	public void Loging_to_mail() throws InterruptedException  
+	public void supplier_login() throws InterruptedException 
 	{
 		logger=report.createTest("Login To gmail");
 		driver.get("https://mail.google.com/");
@@ -115,7 +118,9 @@ public class Hotel_booking extends BaseClass_dev {
 		gp.enterPassword("7501649127#Ritu");
 		Thread.sleep(2000);
 		gp.clickEmail("New Booking Request for");
+		Thread.sleep(5000);
 		gp.View_entire_message();
+		Thread.sleep(3000);
 		//Taking the handle of newly opened window
 		
 		Set <String> ids = driver.getWindowHandles();
@@ -139,38 +144,40 @@ public class Hotel_booking extends BaseClass_dev {
 		HomePage Hp = new HomePage(driver);
 		Hp.Lock_Button();
 		logger=report.createTest("file locked successfully");
+		Hp.supplier_view_files_notes();
 		Thread.sleep(3000);
-		
+		Hp.Files_and_notes_Cross_button();
+		Thread.sleep(2000);
 		Hp.Expand_button();
-		js.executeScript("window.scrollBy(0,1500)");
+		Thread.sleep(2000);
 		Hp.Status1();
 		logger=report.createTest("Showing requested Status");
+		js.executeScript("window.scrollBy(0,1500)");
 		Hp.status_button1();
-		Hp.Status2();
 		logger=report.createTest("Showing Waitlisted/Partially Confirmed Status");
+		Thread.sleep(3000);
+		Hp.status_button2();
 		Hp.status_button3();
 		Hp.status_button4();
-		//Thread.sleep(3000);
-		//Hp.status_button2();
-		//Thread.sleep(3000);
-		//WebElement Confirm_Button = driver.findElement(By.xpath("(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[1]"));   
-		//System.out.println(Confirm_Button.getText());
-		//Confirm_Button.click();
-		//Hp.status_button2();
-		
-		//Thread.sleep(4000);
-		//Hp.Status3();
-		//logger=report.createTest("Showing Confirmed Status");
+		Hp.Status3();
+		logger=report.createTest("Showing Confirmed Status");
 		Hp.View_History();
-		
 		logger=report.createTest("Showing file history");
+		js.executeScript("window.scrollBy(0,200)");
+		js.executeScript("window.scrollBy(0,-5000)");
+		Hp.Save_Changes_button();
+		Hp.error_popup();
+		logger=report.createTest("error_popup showing ");
+		Thread.sleep(3000);
+		js.executeScript("window.scrollBy(0,2000)");
+		//js.executeScript("window.scrollBy(0,-5000)");
 		Hp.Ref_box1();
 		Hp.Ref_box2();
 		logger=report.createTest("Booking reference number entered successfully");
 		js.executeScript("window.scrollBy(0,1500)");
 		// Scroll Up
 		js.executeScript("window.scrollBy(0,-5000)");
-		//Hp.Save_Changes_button();
+		Hp.Save_Changes_button();
 		Thread.sleep(3000);
 		
 		}

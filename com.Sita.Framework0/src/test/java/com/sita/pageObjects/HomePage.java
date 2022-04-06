@@ -187,8 +187,10 @@ public class HomePage extends WebdriverUtility{
 		files_notes.click();
 		
 	}
+	
 	@FindBy(xpath="//span[normalize-space()='View Files and Notes']")WebElement view_files_notes1 ;
 	@FindBy(xpath="//span[contains(text(),'Files & Notes')]")WebElement files_notes1 ;
+	@FindBy(xpath="//div[@class='download-file']")WebElement files_notes_name ;
 	public void view_files_notes_for_poc()
 	{
 		
@@ -196,6 +198,14 @@ public class HomePage extends WebdriverUtility{
 		files_notes1.click();
 		
 	}
+	public void supplier_view_files_notes()
+	{
+		
+		files_notes1.click();
+		System.out.println("The file name is--"+files_notes_name.getText());
+		
+	}
+	
 	@FindBy(xpath="//span[@aria-label='close']//*[name()='svg']")WebElement Files_and_notes_Cross_button ;
 
 	public void Files_and_notes_Cross_button()
@@ -282,33 +292,45 @@ public class HomePage extends WebdriverUtility{
 	@FindBy(xpath="(//div[@class='ant-dropdown-trigger'])[2]")WebElement downarrow_status_button2;
 	@FindBy(xpath="(//div[@class='ant-dropdown-trigger'])[3]")WebElement downarrow_status_button3;
 	@FindBy(xpath="(//div[@class='ant-dropdown-trigger'])[4]")WebElement downarrow_status_button4;
-	@FindBy(xpath="//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed']")WebElement confirm_buttom1;
-	@FindBy(id="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[1]")WebElement confirm_buttom2;
-	@FindBy(xpath="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[2]")WebElement confirm_buttom3;
-	@FindBy(xpath="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[3]")WebElement confirm_buttom4;
+	@FindBy(xpath="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[1]")WebElement confirm_button1;
+	@FindBy(xpath="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[2]")WebElement confirm_button2;
+	@FindBy(xpath="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[3]")WebElement confirm_button3;
+	@FindBy(xpath="(//span[@class='ant-dropdown-menu-title-content'][normalize-space()='Confirmed'])[4]")WebElement confirm_button4;
 	
-	public void status_button1()
+	
+	public void status_button1() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		downarrow_status_button1.click();
-		confirm_buttom1.click();
-		  
+		Thread.sleep(3000);
+		confirm_button1.click();
+		Thread.sleep(3000);
 	}
 	public void status_button2() throws InterruptedException 
-	{
+	{   
+		Thread.sleep(3000);
 		downarrow_status_button2.click();
-		//Thread.sleep(2000);
-		//confirm_buttom2.click();
+		Thread.sleep(3000);
+		confirm_button2.click();
+		Thread.sleep(3000);
 	}
-	public void status_button3()
+	public void status_button3() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		downarrow_status_button3.click();
-		confirm_buttom3.click();
+		Thread.sleep(3000);
+		confirm_button3.click();
+		Thread.sleep(3000);
 	}
-	public void status_button4()
+	public void status_button4()throws InterruptedException
 	{
+		Thread.sleep(3000);
 		downarrow_status_button4.click();
-		confirm_buttom4.click();
+		Thread.sleep(3000);
+		confirm_button4.click();
+		Thread.sleep(3000);
 	}
+	
 	@FindBy(xpath="//span[normalize-space()='View History']")WebElement View_History;
 	@FindBy(xpath="//div[@class='ant-list-item-meta-description']")WebElement Booking_History;
 	@FindBy(xpath="//span[normalize-space()='Done']")WebElement Done_Button;
@@ -344,6 +366,13 @@ public class HomePage extends WebdriverUtility{
 	{
 		System.out.println(Room_category_no.getText());
 		System.out.println(Meal_Plan.getText());
+	}
+	
+	@FindBy(xpath="(//div[@class='ant-notification-notice-description'])[1]")WebElement error_popup;
+	public void error_popup()
+	{
+		System.out.println(error_popup.getText());
+		
 	}
 }
 
