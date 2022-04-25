@@ -69,10 +69,10 @@ public class Hotel_booking extends BaseClass_dev {
 		Hp.Click_ArrowButtonFHE();
 		Hp.Click_on_BookingCentre();
 		Hp.Room_category_no();
-		logger=report.createTest("Room_category,no and Meal Plan is showing");
+		logger=report.createTest("Room Configuration,Pax , Meal Plan is showing");
 		Hp.Hotel_Select_button();
 		Hp.Book_button();
-		logger=report.createTest("bookings can be processed individually");
+		logger=report.createTest("Bookings can be processed individually");
 		Thread.sleep(2000);
 		Hp.Show_more_poc();
 		Thread.sleep(3000);
@@ -89,14 +89,16 @@ public class Hotel_booking extends BaseClass_dev {
 		
 		{
 			String FileName = driver.findElement(By.xpath("//span[@title='Screenshot1.png']")).getText();
+			
 			System.out.println("The Uploaded file name is--"+FileName);
 		}
 		logger=report.createTest("File Upload successfully for FHE");
+		Hp.Notes();
 		WebElement Confirm_button = driver.findElement(By.xpath("//span[normalize-space()='Confirm']"));
 		//js.executeScript("arguments[0].scrollIntoView();", Confirm_button);
 		Confirm_button.click();
 		Thread.sleep(2000);
-		logger=report.createTest("mail sent successfully to poc");
+		logger=report.createTest("Mail sent successfully to POC");
 		Thread.sleep(2000);
 		Hp.BackButton();
 		
@@ -121,6 +123,7 @@ public class Hotel_booking extends BaseClass_dev {
 		Thread.sleep(5000);
 		gp.View_entire_message();
 		Thread.sleep(3000);
+		
 		//Taking the handle of newly opened window
 		
 		Set <String> ids = driver.getWindowHandles();
@@ -140,10 +143,11 @@ public class Hotel_booking extends BaseClass_dev {
 		}
 		LoginPage loginPage=PageFactory.initElements(driver, LoginPage.class);
 		loginPage.loginToAPP(excel.getStringData("Login", 2, 0),excel.getStringData("Login", 2, 1));
-		Thread.sleep(4000);
+		
+		Thread.sleep(10000);
 		HomePage Hp = new HomePage(driver);
 		Hp.Lock_Button();
-		logger=report.createTest("file locked successfully");
+		logger=report.createTest("File locked successfully");
 		Hp.supplier_view_files_notes();
 		Thread.sleep(3000);
 		Hp.Files_and_notes_Cross_button();
@@ -155,10 +159,10 @@ public class Hotel_booking extends BaseClass_dev {
 		js.executeScript("window.scrollBy(0,1500)");
 		Hp.status_button1();
 		logger=report.createTest("Showing Waitlisted/Partially Confirmed Status");
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		Hp.status_button2();
-		Hp.status_button3();
-		Hp.status_button4();
+		//Hp.status_button3();
+		//Hp.status_button4();
 		Hp.Status3();
 		logger=report.createTest("Showing Confirmed Status");
 		Hp.View_History();
@@ -167,12 +171,12 @@ public class Hotel_booking extends BaseClass_dev {
 		js.executeScript("window.scrollBy(0,-5000)");
 		Hp.Save_Changes_button();
 		Hp.error_popup();
-		logger=report.createTest("error_popup showing ");
+		logger=report.createTest("Error popup showing ");
 		Thread.sleep(3000);
 		js.executeScript("window.scrollBy(0,2000)");
 		//js.executeScript("window.scrollBy(0,-5000)");
 		Hp.Ref_box1();
-		Hp.Ref_box2();
+		//Hp.Ref_box2();
 		logger=report.createTest("Booking reference number entered successfully");
 		js.executeScript("window.scrollBy(0,1500)");
 		// Scroll Up
