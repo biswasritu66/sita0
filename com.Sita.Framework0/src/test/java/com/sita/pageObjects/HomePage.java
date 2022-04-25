@@ -191,6 +191,7 @@ public class HomePage extends WebdriverUtility{
 	@FindBy(xpath="//span[normalize-space()='View Files and Notes']")WebElement view_files_notes1 ;
 	@FindBy(xpath="//span[contains(text(),'Files & Notes')]")WebElement files_notes1 ;
 	@FindBy(xpath="//div[@class='download-file']")WebElement files_notes_name ;
+	@FindBy(xpath="//div[normalize-space()='hello']")WebElement note_text ;
 	public void view_files_notes_for_poc()
 	{
 		
@@ -203,6 +204,7 @@ public class HomePage extends WebdriverUtility{
 		
 		files_notes1.click();
 		System.out.println("The file name is--"+files_notes_name.getText());
+		System.out.println("The file name is--"+note_text.getText());
 		
 	}
 	
@@ -255,7 +257,7 @@ public class HomePage extends WebdriverUtility{
 		Show_more_poc.click();
 		
 	}
-	@FindBy(xpath="(//div[@class='select-item'])[5]")WebElement Ritu_poc;
+	@FindBy(xpath="(//div[@class='select-item'])[2]")WebElement Ritu_poc;
 
 	public void Ritu_poc()
 	{
@@ -268,6 +270,12 @@ public class HomePage extends WebdriverUtility{
 	{
 		downarrow_expand_button.click();
 		
+	}
+	
+	@FindBy(xpath="//textarea[@placeholder='Notes ... ']")WebElement Notes;
+	public void Notes()
+	{
+		Notes.sendKeys("hello");
 	}
 	
 	@FindBy(xpath="//span[@class='ant-tag ant-tag-geekblue geekblue   ']")WebElement Requested_Status;
